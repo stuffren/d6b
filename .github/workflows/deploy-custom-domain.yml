@@ -1,7 +1,7 @@
 # 自定义域名部署工作流（根路径部署）
 #
 # 用途：代码推送到 main 分支时自动构建并部署到自定义域名
-# 访问地址：https://d6b.com/
+# 访问地址：https://d6b.qd.je/
 #
 # 环境隔离：此工作流注入 BASE_PATH=/，与 GitHub Pages 环境（/<repo>/）完全隔离
 
@@ -22,7 +22,7 @@ on:
 
 env:
   # 只改这一行的值；其余 ${{ env.CUSTOM_DOMAIN }} 都是对它的引用
-  CUSTOM_DOMAIN: d6b.com
+  CUSTOM_DOMAIN: d6b.qd.je
 
 jobs:
   build:
