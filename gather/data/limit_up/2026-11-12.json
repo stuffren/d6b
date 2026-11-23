@@ -1,0 +1,612 @@
+{
+  "schema_version": "1.0",
+  "trade_date": "2026-11-12",
+  "themes": [
+    {
+      "name": "医药",
+      "type": "sector",
+      "reason": "创新药出海与基药目录调整，CRO订单回暖"
+    },
+    {
+      "name": "光伏",
+      "type": "sector",
+      "reason": "光伏板块当日涨停"
+    },
+    {
+      "name": "汽车",
+      "type": "sector",
+      "reason": "整车智能化带动零部件订单，出口与新车周期共振"
+    },
+    {
+      "name": "机器人",
+      "type": "sector",
+      "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
+    },
+    {
+      "name": "电子化学品",
+      "type": "sector",
+      "reason": "电子化学品国产替代加速，化工品价格企稳回升"
+    },
+    {
+      "name": "文化传媒",
+      "type": "sector",
+      "reason": "AI短剧与微短剧密集落地，影视院线内容供给回暖"
+    },
+    {
+      "name": "生肖炒作",
+      "type": "sentiment",
+      "reason": "岁末生肖与谐音标的资金抱团，短线情绪驱动"
+    },
+    {
+      "name": "名称系炒作",
+      "type": "sentiment",
+      "reason": "名称联想与概念扩散驱动，资金短线抱团"
+    },
+    {
+      "name": "其他概念",
+      "type": "other",
+      "reason": "题材分散，无明确主线"
+    }
+  ],
+  "stocks": [
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "board_count": 9,
+      "seal_time": "09:25:00",
+      "seal_amount": 11813133,
+      "theme": "生肖炒作",
+      "reason": "“羊”字辈+“东方系”+海洋养殖",
+      "tags": [
+        "“羊”字辈",
+        "“东方系”",
+        "海洋养殖"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002172",
+      "name": "澳洋健康",
+      "board_count": 6,
+      "seal_time": "09:42:51",
+      "seal_amount": 50765850,
+      "theme": "医药",
+      "reason": "“羊”字辈+脑机接口+医疗服务",
+      "tags": [
+        "“羊”字辈",
+        "脑机接口",
+        "医疗服务"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "board_count": 6,
+      "seal_time": "10:38:19",
+      "seal_amount": 42647243,
+      "theme": "其他概念",
+      "reason": "冰雪旅游保障+高速公路运营+黑龙江",
+      "tags": [
+        "冰雪旅游保障",
+        "高速公路运营",
+        "黑龙江"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600327",
+      "name": "大东方",
+      "board_count": 6,
+      "seal_time": "14:56:47",
+      "seal_amount": 27188276,
+      "theme": "名称系炒作",
+      "reason": "“东方系”+百货零售+儿科医疗",
+      "tags": [
+        "“东方系”",
+        "百货零售",
+        "儿科医疗"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002623",
+      "name": "亚玛顿",
+      "board_count": 5,
+      "seal_time": "09:25:00",
+      "seal_amount": 170182252,
+      "theme": "光伏",
+      "reason": "复牌+控制权变更+光伏玻璃+玻璃基板",
+      "tags": [
+        "复牌",
+        "控制权变更",
+        "光伏玻璃",
+        "玻璃基板"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603366",
+      "name": "日出东方",
+      "board_count": 5,
+      "seal_time": "09:30:18",
+      "seal_amount": 82702845,
+      "theme": "名称系炒作",
+      "reason": "“东方系”+光伏+储能+空气能热泵",
+      "tags": [
+        "“东方系”",
+        "光伏",
+        "储能",
+        "空气能热泵"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000995",
+      "name": "皇台酒业",
+      "board_count": 5,
+      "seal_time": "13:07:39",
+      "seal_amount": 27163064,
+      "theme": "其他概念",
+      "reason": "白酒+老窖池",
+      "tags": [
+        "白酒",
+        "老窖池"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603706",
+      "name": "东方环宇",
+      "board_count": 4,
+      "seal_time": "11:00:46",
+      "seal_amount": 39930512,
+      "theme": "名称系炒作",
+      "reason": "“东方系”+寒潮供暖+天然气+集中供热",
+      "tags": [
+        "“东方系”",
+        "寒潮供暖",
+        "天然气",
+        "集中供热"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603536",
+      "name": "惠发食品",
+      "board_count": 3,
+      "seal_time": "09:30:11",
+      "seal_amount": 49288592,
+      "theme": "其他概念",
+      "reason": "预制菜+速冻调理肉制品",
+      "tags": [
+        "预制菜",
+        "速冻调理肉制品"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605255",
+      "name": "天普股份",
+      "board_count": 3,
+      "seal_time": "09:41:02",
+      "seal_amount": 7194192,
+      "theme": "汽车",
+      "reason": "中昊芯英+实控人变更+汽车管路",
+      "tags": [
+        "中昊芯英",
+        "实控人变更",
+        "汽车管路"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603725",
+      "name": "天安新材",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 56779188,
+      "theme": "其他概念",
+      "reason": "光通信+拟收购嘉万光+机器人皮肤",
+      "tags": [
+        "光通信",
+        "拟收购嘉万光",
+        "机器人皮肤"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 79416489,
+      "theme": "其他概念",
+      "reason": "四足机器人+手机游戏+物联网",
+      "tags": [
+        "四足机器人",
+        "手机游戏",
+        "物联网"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603396",
+      "name": "金辰股份",
+      "board_count": 2,
+      "seal_time": "09:25:01",
+      "seal_amount": 254751107,
+      "theme": "光伏",
+      "reason": "光伏设备+半导体装备+玻璃基封装",
+      "tags": [
+        "光伏设备",
+        "半导体装备",
+        "玻璃基封装"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002593",
+      "name": "日上集团",
+      "board_count": 2,
+      "seal_time": "09:30:24",
+      "seal_amount": 27021987,
+      "theme": "其他概念",
+      "reason": "海峡两岸+机器人+车轮",
+      "tags": [
+        "海峡两岸",
+        "机器人",
+        "车轮"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600853",
+      "name": "龙建股份",
+      "board_count": 2,
+      "seal_time": "09:52:35",
+      "seal_amount": 36953653,
+      "theme": "其他概念",
+      "reason": "冰雪经济+海外基建+寒区施工+黑龙江",
+      "tags": [
+        "冰雪经济",
+        "海外基建",
+        "寒区施工",
+        "黑龙江"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002021",
+      "name": "中捷资源",
+      "board_count": 2,
+      "seal_time": "11:11:42",
+      "seal_amount": 35755376,
+      "theme": "机器人",
+      "reason": "机器人+工业缝纫机+海外市场",
+      "tags": [
+        "机器人",
+        "工业缝纫机",
+        "海外市场"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603135",
+      "name": "中重科技",
+      "board_count": 2,
+      "seal_time": "11:12:46",
+      "seal_amount": 6871703,
+      "theme": "机器人",
+      "reason": "人形机器人+冶金装备+海外拓展",
+      "tags": [
+        "人形机器人",
+        "冶金装备",
+        "海外拓展"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000573",
+      "name": "粤宏远Ａ",
+      "board_count": 1,
+      "seal_time": "09:25:00",
+      "seal_amount": 65491133,
+      "theme": "其他概念",
+      "reason": "股权收购+精密传动+滚珠丝杠+房地产",
+      "tags": [
+        "股权收购",
+        "精密传动",
+        "滚珠丝杠",
+        "房地产"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "board_count": 1,
+      "seal_time": "09:30:54",
+      "seal_amount": 11998864,
+      "theme": "生肖炒作",
+      "reason": "“羊”字辈+水产加工+鱼粉鱼油",
+      "tags": [
+        "“羊”字辈",
+        "水产加工",
+        "鱼粉鱼油"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600558",
+      "name": "大西洋",
+      "board_count": 1,
+      "seal_time": "09:31:40",
+      "seal_amount": 4141604,
+      "theme": "机器人",
+      "reason": "机器人焊接材料+可控核聚变+航空航天+“羊”字辈",
+      "tags": [
+        "机器人焊接材料",
+        "可控核聚变",
+        "航空航天",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002628",
+      "name": "成都路桥",
+      "board_count": 1,
+      "seal_time": "09:32:00",
+      "seal_amount": 56169474,
+      "theme": "其他概念",
+      "reason": "机器人+萤石矿+基建施工",
+      "tags": [
+        "机器人",
+        "萤石矿",
+        "基建施工"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "board_count": 1,
+      "seal_time": "09:38:26",
+      "seal_amount": 11088756,
+      "theme": "其他概念",
+      "reason": "AI算力PCB+存储PCB+高阶PCB认证",
+      "tags": [
+        "AI算力PCB",
+        "存储PCB",
+        "高阶PCB认证"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002205",
+      "name": "国统股份",
+      "board_count": 1,
+      "seal_time": "09:45:06",
+      "seal_amount": 30665855,
+      "theme": "其他概念",
+      "reason": "PCCP管道+风电混塔",
+      "tags": [
+        "PCCP管道",
+        "风电混塔"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605169",
+      "name": "洪通燃气",
+      "board_count": 1,
+      "seal_time": "09:47:20",
+      "seal_amount": 39165448,
+      "theme": "其他概念",
+      "reason": "新疆燃气+LNG+三季报高增",
+      "tags": [
+        "新疆燃气",
+        "LNG",
+        "三季报高增"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "board_count": 1,
+      "seal_time": "09:55:03",
+      "seal_amount": 60557778,
+      "theme": "其他概念",
+      "reason": "百货零售+免税退税+广州",
+      "tags": [
+        "百货零售",
+        "免税退税",
+        "广州"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "001358",
+      "name": "兴欣新材",
+      "board_count": 1,
+      "seal_time": "09:55:09",
+      "seal_amount": 28904995,
+      "theme": "电子化学品",
+      "reason": "光刻胶剥离液+电子化学品",
+      "tags": [
+        "光刻胶剥离液",
+        "电子化学品"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600569",
+      "name": "安阳钢铁",
+      "board_count": 1,
+      "seal_time": "09:57:27",
+      "seal_amount": 17838400,
+      "theme": "生肖炒作",
+      "reason": "特钢转型+河南+定增过会+“羊”字辈",
+      "tags": [
+        "特钢转型",
+        "河南",
+        "定增过会",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600857",
+      "name": "宁波中百",
+      "board_count": 1,
+      "seal_time": "10:01:21",
+      "seal_amount": 46365450,
+      "theme": "其他概念",
+      "reason": "商业零售+黄金珠宝+杭州金帝入主",
+      "tags": [
+        "商业零售",
+        "黄金珠宝",
+        "杭州金帝入主"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601929",
+      "name": "吉视传媒",
+      "board_count": 1,
+      "seal_time": "10:09:10",
+      "seal_amount": 48447772,
+      "theme": "文化传媒",
+      "reason": "AI微短剧+AI应用+智慧广电",
+      "tags": [
+        "AI微短剧",
+        "AI应用",
+        "智慧广电"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002693",
+      "name": "双成药业",
+      "board_count": 1,
+      "seal_time": "10:49:42",
+      "seal_amount": 8190486,
+      "theme": "其他概念",
+      "reason": "GMP检查+多肽药+药品出海+三季报扭亏",
+      "tags": [
+        "GMP检查",
+        "多肽药",
+        "药品出海",
+        "三季报扭亏"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603958",
+      "name": "哈森股份",
+      "board_count": 1,
+      "seal_time": "10:53:09",
+      "seal_amount": 7732870,
+      "theme": "其他概念",
+      "reason": "苹果产业链+机器人+资产重组",
+      "tags": [
+        "苹果产业链",
+        "机器人",
+        "资产重组"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605222",
+      "name": "起帆电缆",
+      "board_count": 1,
+      "seal_time": "11:20:30",
+      "seal_amount": 52673760,
+      "theme": "其他概念",
+      "reason": "机器人电缆+商业航天+海缆",
+      "tags": [
+        "机器人电缆",
+        "商业航天",
+        "海缆"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600467",
+      "name": "好当家",
+      "board_count": 1,
+      "seal_time": "11:23:30",
+      "seal_amount": 44291064,
+      "theme": "其他概念",
+      "reason": "海参+预制菜+海洋经济",
+      "tags": [
+        "海参",
+        "预制菜",
+        "海洋经济"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "board_count": 1,
+      "seal_time": "13:00:02",
+      "seal_amount": 14422781,
+      "theme": "其他概念",
+      "reason": "福建+水泥熟料+重点工程",
+      "tags": [
+        "福建",
+        "水泥熟料",
+        "重点工程"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601091",
+      "name": "沈鼓集团",
+      "board_count": 1,
+      "seal_time": "13:29:26",
+      "seal_amount": 72487800,
+      "theme": "机器人",
+      "reason": "天然气压缩机+离心压缩机+煤化工装备+次新股",
+      "tags": [
+        "天然气压缩机",
+        "离心压缩机",
+        "煤化工装备",
+        "次新股"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601606",
+      "name": "长城军工",
+      "board_count": 1,
+      "seal_time": "13:52:54",
+      "seal_amount": 46741132,
+      "theme": "其他概念",
+      "reason": "弹药装备+兵装重组",
+      "tags": [
+        "弹药装备",
+        "兵装重组"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601566",
+      "name": "九牧王",
+      "board_count": 1,
+      "seal_time": "14:30:58",
+      "seal_amount": 24228648,
+      "theme": "其他概念",
+      "reason": "羊毛羊绒+男裤+海峡两岸",
+      "tags": [
+        "羊毛羊绒",
+        "男裤",
+        "海峡两岸"
+      ],
+      "is_delisting": false
+    }
+  ]
+}

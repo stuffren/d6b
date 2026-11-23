@@ -1,0 +1,105 @@
+# GitHub Pages 部署工作流（支持子路径部署）
+# 
+# 用途：代码推送到指定分支时自动构建并部署到 GitHub Pages
+# 适用场景：GitHub Pages 子路径部署（如 https://username.github.io/repo-name/）
+#
+# 使用方式：
+# 1. 将此文件复制到 .github/workflows/deploy.yml
+# 2. 在 GitHub 仓库 Settings > Secrets and variables > Actions 中配置以下 Secrets：
+#    - GH_TOKEN: GitHub Personal Access Token（需 repo 权限）
+# 3. 根据需要修改 inputs 默认值
+#
+# 手动触发：Actions > Build and Deploy > Run workflow
+
+name: Build and Deploy
+
+on:
+  # 推送到指定分支时触发（默认 main）
+  push:
+    branches: [main]
+
+  # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      node_version:
+        description: 'Node.js version'
+        required: false
+        default: '22'
+      base_path:
+        description: 'Deployment path prefix (e.g., /my-app/)'
+        required: false
+        default: '/'
+      base_url:
+        description: 'Site base URL (e.g., https://username.github.io/repo)'
+        required: false
+        default: ''
+      cname_domain:
+        description: 'Custom domain (optional, leave empty to skip CNAME)'
+        required: false
+        default: ''
+      publish_branch:
+        description: 'Target branch for deployment'
+        required: false
+        default: 'gh-pages'
+      build_command:
+        description: 'Build command'
+        required: false
+        default: 'npm run build'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ github.event.inputs.node_version || '22' }}
+          cache: 'npm'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. 动态创建 .env 文件（将 inputs 和 secrets 写入环境变量）
+      - name: Create .env file
+        run: |
+          # 基础配置
+          echo "VITE_BASE_URL=${{ github.event.inputs.base_url || '' }}" > .env
+          
+          # 在此添加项目特定的环境变量
+          # 示例：
+          # echo "VITE_API_URL=${{ secrets.API_URL }}" >> .env
+          # echo "VITE_APP_NAME=${{ vars.APP_NAME }}" >> .env
+
+      # 5. 执行构建
+      - name: Build
+        run: ${{ github.event.inputs.build_command || 'npm run build' }}
+        env:
+          # 部署路径前缀（GitHub Pages 子路径部署时需要）
+          BASE_PATH: ${{ github.event.inputs.base_path || '/' }}
+          # 站点基础 URL
+          VITE_BASE_URL: ${{ github.event.inputs.base_url || '' }}
+          # GitHub Token（如需在构建时调用 GitHub API）
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          # 在此添加项目特定的环境变量
+          # 示例：
+          # VITE_API_URL: ${{ secrets.API_URL }}
+
+      # 6. 创建 CNAME 文件（仅当配置了自定义域名时）
+      - name: Create CNAME file
+        if: ${{ github.event.inputs.cname_domain != '' }}
+        run: echo "${{ github.event.inputs.cname_domain }}" > ./dist/CNAME
+
+      # 7. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: ${{ github.event.inputs.publish_branch || 'gh-pages' }}

@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://d6b.example.com/schema/dragon_tiger.schema.json",
+  "title": "d6b 龙虎榜数据单日文件",
+  "description": "对应 gather/data/dragon_tiger/YYYY-MM-DD.json。只存事实、不存派生：上榜原因条数（= entries.length）、席位是否与其他原因重复、任何跨股票统计量一律由构建/渲染层现算，禁止写入本文件。契约形态由 2026-11-02 真实数据（60 只股票 / 68 条记录 / 8 只多原因上榜）冻结，并经 2026-10-26 ~ 2026-11-13 共 15 个交易日（1005 条记录 / 28 种榜单规则）回溯验证。",
+  "type": "object",
+  "required": ["schema_version", "trade_date", "stocks"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "description": "契约版本号，当前固定为 1.0",
+      "type": "string",
+      "const": "1.0"
+    },
+    "trade_date": {
+      "description": "交易日，必须存在于 data/meta/trade_calendar.json",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "stocks": {
+      "description": "当日龙虎榜个股列表，一只股票一条记录。同一股票因多个榜单规则上榜时，多条原因收进同一个 entries 数组，不得拆成多条股票记录",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "entries"],
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "description": "股票代码，必须为字符串以保留前导零（如 000410）",
+            "type": "string",
+            "pattern": "^\\d{6}$"
+          },
+          "name": {
+            "description": "股票名称，采集时已剔除 ST 股",
+            "type": "string",
+            "minLength": 1
+          },
+          "entries": {
+            "description": "上榜条目，至少 1 项。一项对应一条榜单规则；同一股票可有多项，实测 2026-11-02 有 8 只股票为 2 项。禁止为空数组",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["reason", "trade_amount", "buy_amount", "sell_amount", "net_amount", "seats"],
+              "additionalProperties": false,
+              "properties": {
+                "reason": {
+                  "description": "榜单规则原文（如「日涨幅偏离值达到7%的前5只证券」），禁止改写或拼接多个原因",
+                  "type": "string",
+                  "minLength": 1
+                },
+                "trade_amount": {
+                  "description": "该原因口径下的龙虎榜成交额，数值单位为元。是区分同一股票多口径的唯一依据，必须保留（如澳洋健康两个原因分别为 4.009 亿与 2.245 亿）",
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "buy_amount": {
+                  "description": "合计买入额，数值单位为元，禁止字符串（如 1.23亿）。注意是买入总额而非净买入额",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "sell_amount": {
+                  "description": "合计卖出额，数值单位为元，禁止字符串。注意是卖出总额而非净卖出额",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "net_amount": {
+                  "description": "净额，数值单位为元，可为负值（实测 68 条中 27 条为负），负值表示净卖出，不是缺失值。必须满足 net_amount ≈ buy_amount - sell_amount，该等式由校验脚本业务层比对（上游直接给净额，不做重算）。容差按榜单口径分档：普通榜单为 0.02 元（15 日实测 1004/1005 条零偏差）；长周期统计口径（「连续10个交易日」「严重异常期间」）为 100 元，因上游以万元为单位取整后回乘会产生百元级精度截断（15 日实测仅 1 条：奥精医疗 net=0 而 buy-sell=-100）",
+                  "type": "number"
+                },
+                "seats": {
+                  "description": "买卖席位。每侧最多 5 项（上游披露上限，实测全部为 5）；不足 5 项时截断数组长度，禁止补空 name + 零 amount 的空占位",
+                  "type": "object",
+                  "required": ["buy", "sell"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "buy": {
+                      "description": "买入席位，按金额降序排列",
+                      "type": "array",
+                      "maxItems": 5,
+                      "items": {
+                        "$ref": "#/definitions/seat"
+                      }
+                    },
+                    "sell": {
+                      "description": "卖出席位，按金额降序排列",
+                      "type": "array",
+                      "maxItems": 5,
+                      "items": {
+                        "$ref": "#/definitions/seat"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "seat": {
+      "description": "单个席位。字段固定为 name + amount 两个，不再拆分为 buy / sell。席位有两种形态：(1) 营业部型——name 为券商营业部或「机构专用」，占绝大多数（15 日实测 1003/1005 条记录）；(2) 投资者分类型——name 为「自然人 / 中小投资者 / 其他自然人 / 机构投资者 / 沪股通 / 深股通投资者」，仅出现在「连续10个交易日」「严重异常期间」这类长周期统计口径的榜单上，属上游对该类榜单的固定披露形态，不是数据错误",
+      "type": "object",
+      "required": ["name", "amount"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "description": "席位名称原文。营业部型时为营业部名称，其中「机构专用」作为普通名称字符串出现，且同侧允许重复出现（实测同侧出现 2 条「机构专用」为两条独立记录，禁止合并去重）；投资者分类型时为投资者类别名称",
+          "type": "string",
+          "minLength": 1
+        },
+        "amount": {
+          "description": "该席位买入或卖出金额，数值单位为元，禁止字符串。允许为 0：投资者分类型榜单中「沪股通 / 深股通投资者」当期无成交时为真实 0（15 日实测 4 条，全部属该形态），0 是事实而非缺失；但同一侧席位不得全为 0，该约束由校验脚本业务层检查",
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

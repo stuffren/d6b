@@ -1,0 +1,82 @@
+# 自定义域名部署工作流（根路径部署）
+#
+# 用途：代码推送到 main 分支时自动构建并部署到自定义域名
+# 访问地址：https://d6b.com/
+#
+# 环境隔离：此工作流注入 BASE_PATH=/，与 GitHub Pages 环境（/<repo>/）完全隔离
+
+name: Deploy to Custom Domain
+
+on:
+  # 推送到 main 分支时自动触发
+  push:
+    branches: [main]
+
+  # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      node_version:
+        description: 'Node.js version'
+        required: false
+        default: '22'
+
+env:
+  # 只改这一行的值；其余 ${{ env.CUSTOM_DOMAIN }} 都是对它的引用
+  CUSTOM_DOMAIN: d6b.com
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      DEPLOY_ENV: custom-domain
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ github.event.inputs.node_version || '22' }}
+          cache: 'npm'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. 执行构建（注入根路径与自定义域名环境变量，覆盖 .env 与 presets）
+      - name: Build
+        run: npm run build
+        env:
+          BASE_PATH: /
+          SITE_BASE_URL: https://${{ env.CUSTOM_DOMAIN }}
+          VITE_CUSTOM_DOMAIN: ${{ env.CUSTOM_DOMAIN }}
+
+      # 5. 创建 CNAME 文件（GitHub Pages 自定义域名必需）
+      - name: Create CNAME file
+        run: echo "${{ env.CUSTOM_DOMAIN }}" > ./dist/CNAME
+
+      # 6. 校验构建产物
+      - name: Verify build output
+        run: |
+          for f in index.html 404.html sitemap.xml robots.txt CNAME; do
+            test -f "dist/$f" || { echo "缺少 dist/$f"; exit 1; }
+          done
+          test "$(cat dist/CNAME)" = "${{ env.CUSTOM_DOMAIN }}" || { echo "CNAME 内容与 CUSTOM_DOMAIN 不一致"; exit 1; }
+          grep -q 'src="/assets/' dist/index.html || { echo "根路径部署资源路径不应带前缀"; exit 1; }
+          grep -q "rel=\"canonical\" href=\"https://${{ env.CUSTOM_DOMAIN }}/" dist/index.html || { echo "canonical 未使用 SITE_BASE_URL"; exit 1; }
+          grep -q "https://${{ env.CUSTOM_DOMAIN }}/sitemap.xml" dist/robots.txt || { echo "robots.txt 未指向正确 sitemap"; exit 1; }
+          echo "产物校验通过"
+
+      # 7. 部署到 gh-pages-custom-domain 分支
+      - name: Deploy to Custom Domain
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages-custom-domain
+          force_orphan: true

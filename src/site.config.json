@@ -1,0 +1,14 @@
+{
+  "siteName": "d6b",
+  "footer": "© 2026 Vanilla JS Development - All rights reserved",
+  "categories": [
+    { "id": "zhangtingban", "label": "涨停板", "path": "/zhangtingban/", "type": "data", "order": 1 },
+    { "id": "lianbantiandi", "label": "连板天梯", "path": "/lianbantiandi/", "type": "data", "order": 2 },
+    { "id": "maintheme", "label": "主线题材", "path": "/maintheme/", "type": "data", "order": 3 },
+    { "id": "dragonhu", "label": "龙虎榜", "path": "/dragonhu/", "type": "data", "order": 4 },
+    { "id": "days", "label": "归档", "path": "/days/", "type": "data", "order": 5 },
+    { "id": "notes", "label": "复盘笔记", "path": "/categories/notes/", "type": "content", "order": 6 },
+    { "id": "methods", "label": "投资方法", "path": "/categories/methods/", "type": "content", "order": 7 },
+    { "id": "about", "label": "关于", "path": "/about/", "type": "content", "order": 8 }
+  ]
+}

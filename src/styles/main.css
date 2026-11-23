@@ -1,0 +1,45 @@
+@import '../../core/styles/variables.css';
+@import './layout.css';
+@import './table.css';
+@import './page.css';
+
+:root {
+  --color-up: #d32f2f;
+  --color-down: #2e7d32;
+  --color-seal-auction-bg: #d32f2f;
+  --color-seal-tail-bg: #ed6c02;
+  --d6b-container-max: 1100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

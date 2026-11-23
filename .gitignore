@@ -1,0 +1,47 @@
+# 依赖目录
+node_modules/
+
+# 构建产物
+dist/
+
+# 环境文件（仅保留 .env 模板，不提交真实配置）
+.env
+.env.local
+.env.production.local
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+npm-debug.log*
+
+# 临时文件
+*.tmp
+*.temp
+
+#源数据层doc
+gather_doc/
+
+# 备份及issue
+_bak/
+issue/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 采集层：保留源码与事实数据，仅排除可再生产物
+gather/logs/
+gather/data/logs/*.csv
+gather/data/limit_up/excel/
+
+
+
