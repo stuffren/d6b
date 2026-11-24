@@ -22,7 +22,7 @@ on:
 
 env:
   # 只改这一行的值；其余 ${{ env.CUSTOM_DOMAIN }} 都是对它的引用
-  CUSTOM_DOMAIN: d6b.qd.je
+  CUSTOM_DOMAIN: id6b.top
 
 jobs:
   build:
