@@ -188,6 +188,14 @@ function adsenseHead() {
   return `${meta}\n  <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ADSENSE.client)}"></script>`;
 }
 
+function writeAdsTxt() {
+  if (!ADSENSE.client) return;
+  const file = join(ROOT, DIST_DIR, 'ads.txt');
+  writeFileSync(file,
+    `google.com, ${ADSENSE.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`, 'utf-8');
+  console.log('[SSG] 已写入 dist/ads.txt');
+}
+
 function headHTML(pageData) {
   const title = pageData.title ? `${pageData.title}_${siteName}` : siteName;
   const description = pageData.description || '';
@@ -281,6 +289,17 @@ function assertOutputs(aliasPaths) {
 
     if (ADSENSE.client && !/<meta name="google-adsense-account"/.test(content)) {
       errors.push(`${rel}: 缺少 google-adsense-account 元标记`);
+    }
+  }
+
+  if (ADSENSE.client) {
+    const adsTxtPath = join(distPath, 'ads.txt');
+    if (!existsSync(adsTxtPath)) {
+      errors.push('ads.txt: 文件缺失');
+    } else {
+      const expected = `google.com, ${ADSENSE.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0`;
+      const actual = readFileSync(adsTxtPath, 'utf-8').trim();
+      if (!actual.includes(expected)) errors.push('ads.txt: 记录内容与 client 不匹配');
     }
   }
 
@@ -445,6 +464,7 @@ async function main() {
   const { default: notfound } = await import('../src/pages/notfound.js');
   writeNotFoundPage(notfound, siteConfig, env);
   writeCname();
+  writeAdsTxt();
 
   assertOutputs(aliasPaths);
   console.log('[SSG] 构建完成！');
