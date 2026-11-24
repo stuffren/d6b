@@ -1,61 +1,24 @@
+import { ADSENSE } from '../config/adsense.js';
 import { env } from '../env.js';
 import { esc } from '../lib/format.js';
 
-const LOADER_SRC = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-
-export function adsenseHeadHTML(client = env.adsenseClient) {
-  if (!client) return '';
-  return `<script async crossorigin="anonymous" src="${LOADER_SRC}?client=${encodeURIComponent(client)}"></script>`;
-}
-
-export function adSlotHTML({
-  client = env.adsenseClient,
-  slot = env.adsenseSlot,
-  label = '广告',
-  className = ''
-} = {}) {
-  const configured = client && slot;
-  if (!configured && !env.isDev) return '';
-  const inner = configured
-    ? `<ins class="adsbygoogle ad-slot-ins"
-      style="display:block"
-      data-ad-client="${esc(client)}"
-      data-ad-slot="${esc(slot)}"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>`
-    : `<div class="ad-slot-placeholder">Ad placement（开发预览：未配置 VITE_ADSENSE_CLIENT / VITE_ADSENSE_SLOT）</div>`;
-  return `
-<section class="ad-slot${className ? ` ${className}` : ''}" aria-label="${esc(label)}">
+export function adSlotHTML({ slot = ADSENSE.slot, label = '广告', className = '' } = {}) {
+  if (!ADSENSE.client || !slot) {
+    return env.isDev
+      ? '<section class="ad-slot"><div class="ad-slot-placeholder">Ad placement（开发预览：slot 未配置）</div></section>'
+      : '';
+  }
+  return `<section class="ad-slot${className ? ` ${className}` : ''}" aria-label="${esc(label)}">
   <span class="ad-slot-label">${esc(label)}</span>
-  <div class="ad-slot-body">${inner}</div>
-</section>`.trim();
-}
-
-function ensureLoader(client) {
-  if (window.__d6bAdsenseLoaded) return;
-  window.__d6bAdsenseLoaded = true;
-  if (document.querySelector('script[src*="adsbygoogle.js"]')) return;
-  const script = document.createElement('script');
-  script.async = true;
-  script.crossOrigin = 'anonymous';
-  script.src = `${LOADER_SRC}?client=${encodeURIComponent(client)}`;
-  document.head.appendChild(script);
+  <div class="ad-slot-body"><ins class="adsbygoogle ad-slot-ins" style="display:block" data-ad-client="${esc(ADSENSE.client)}" data-ad-slot="${esc(slot)}" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+</section>`;
 }
 
 export function mountAdSlot(el) {
-  if (!env.adsenseClient) return;
-  const units = el.querySelectorAll('.ad-slot-ins');
-  if (!units.length) return;
-
-  ensureLoader(env.adsenseClient);
-
-  for (const unit of units) {
+  if (!ADSENSE.client || !ADSENSE.slot) return;
+  for (const unit of el.querySelectorAll('.ad-slot-ins')) {
     if (unit.dataset.d6bAd === '1') continue;
     unit.dataset.d6bAd = '1';
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (err) {
-      console.error('[AdSlot] 广告加载失败:', err);
-    }
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
 }

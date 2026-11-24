@@ -16,9 +16,7 @@ export const env = {
   pageLadderDays: Number(__PAGE_LADDER_DAYS__) || 10,
   last10Days: Number(__LAST10_DAYS__) || 10,
   mobileLadderDays: Number(__MOBILE_LADDER_DAYS__) || 3,
-  enableDragonTiger: String(__ENABLE_DRAGON_TIGER__) === 'true',
-  adsenseClient: __ADSENSE_CLIENT__ || '',
-  adsenseSlot: __ADSENSE_SLOT__ || ''
+  enableDragonTiger: String(__ENABLE_DRAGON_TIGER__) === 'true'
 };
 
 export function url(path) {

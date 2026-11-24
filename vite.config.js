@@ -179,19 +179,6 @@ function cleanAssetsDir() {
   };
 }
 
-function adsenseHeadInject() {
-  return {
-    name: 'adsense-head-inject',
-    transformIndexHtml(html) {
-      const client = env.get('VITE_ADSENSE_CLIENT') || '';
-      const slot = env.get('VITE_ADSENSE_SLOT') || '';
-      if (!client || !slot) return html;
-      const tag = `<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}"></script>`;
-      return html.replace('</head>', `    ${tag}\n  </head>`);
-    }
-  };
-}
-
 function spaFallback() {
   return {
     name: 'spa-fallback',
@@ -206,7 +193,7 @@ export default defineConfig({
   define: env.getDefine(),
   publicDir: false,
   build: { outDir: 'dist', assetsDir: 'assets', emptyOutDir: false },
-  plugins: [serveDistData(), cleanAssetsDir(), adsenseHeadInject(), spaFallback()],
+  plugins: [serveDistData(), cleanAssetsDir(), spaFallback()],
   server: {
     fs: {
       allow: [PROJECT_ROOT, resolve(PROJECT_ROOT, 'dist')]

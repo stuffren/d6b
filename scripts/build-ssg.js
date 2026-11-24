@@ -13,6 +13,7 @@ import { createSSGEngine, escapeHtml } from '../core/ssg_build/ssg_build.js';
 import { createEnvManager } from '../core/multiple_env/multi_env.js';
 import { ENV_SCHEMA } from './env-schema.js';
 import { deployPresets } from './deploy-presets.js';
+import { ADSENSE } from '../src/config/adsense.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -91,8 +92,6 @@ globalThis.__PAGE_LADDER_DAYS__ = String(pageLadderDays);
 globalThis.__MOBILE_LADDER_DAYS__ = String(mobileLadderDays);
 globalThis.__LAST10_DAYS__ = String(last10Days);
 globalThis.__ENABLE_DRAGON_TIGER__ = String(enableDragonTiger);
-globalThis.__ADSENSE_CLIENT__ = envManager.get('VITE_ADSENSE_CLIENT');
-globalThis.__ADSENSE_SLOT__ = envManager.get('VITE_ADSENSE_SLOT');
 
 const versionData = readJSON(join(DATA_DIR, 'version.json'));
 const dataVersion = versionData?.generated_at || null;
@@ -182,11 +181,11 @@ function canonicalFor(urlPath) {
   return joinSiteUrl(urlPath);
 }
 
-function adsenseHeadTag() {
-  const client = globalThis.__ADSENSE_CLIENT__ || '';
-  const slot = globalThis.__ADSENSE_SLOT__ || '';
-  if (!client || !slot) return '';
-  return `\n  <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}"></script>`;
+function adsenseHead() {
+  if (!ADSENSE.client) return '';
+  const meta = `\n  <meta name="google-adsense-account" content="${escapeHtml(ADSENSE.client)}">`;
+  if (!ADSENSE.slot) return meta;
+  return `${meta}\n  <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ADSENSE.client)}"></script>`;
 }
 
 function headHTML(pageData) {
@@ -194,7 +193,6 @@ function headHTML(pageData) {
   const description = pageData.description || '';
   const type = pageData.type || 'website';
   const url = pageData.url || '';
-  const adsense = pageData.hasAdSlot === false ? '' : adsenseHeadTag();
   return `
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
@@ -203,7 +201,7 @@ function headHTML(pageData) {
   <meta property="og:type" content="${escapeHtml(type)}">
   <meta property="og:url" content="${escapeHtml(url)}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="${escapeHtml(url)}">${adsense}`;
+  <link rel="canonical" href="${escapeHtml(url)}">${adsenseHead()}`;
 }
 
 function wrapperHTML({ head, body, assets }) {
@@ -280,6 +278,10 @@ function assertOutputs(aliasPaths) {
     else if (canonicalMatches.length > 1) errors.push(`${rel}: 存在多个 canonical`);
 
     if (!/<div id="app">/.test(content)) errors.push(`${rel}: 缺少 #app 容器`);
+
+    if (ADSENSE.client && !/<meta name="google-adsense-account"/.test(content)) {
+      errors.push(`${rel}: 缺少 google-adsense-account 元标记`);
+    }
   }
 
   console.log(`\n[SSG] 自检结果：${htmlFiles.length} 个 HTML，${titles.size} 个唯一 title`);
@@ -428,7 +430,6 @@ async function main() {
           description: meta.description,
           url: canonical,
           type: PAGE_REGISTRY[route.path]?.ogType || 'website',
-          hasAdSlot: page.adSlot !== false,
           __ctx: ctx
         };
       },
@@ -444,7 +445,6 @@ async function main() {
   const { default: notfound } = await import('../src/pages/notfound.js');
   writeNotFoundPage(notfound, siteConfig, env);
   writeCname();
-  writeAdsTxt();
 
   assertOutputs(aliasPaths);
   console.log('[SSG] 构建完成！');
@@ -460,7 +460,7 @@ function writeNotFoundPage(notfound, siteConfig, env) {
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="${escapeHtml(canonical)}">`;
+  <link rel="canonical" href="${escapeHtml(canonical)}">${adsenseHead()}`;
 
   const ctx = { env, siteConfig, params: {}, router: null };
   const data = {};
@@ -507,21 +507,6 @@ function writeCname() {
     rmSync(file, { force: true });
     console.log('[SSG] 已移除残留 dist/CNAME（当前环境非自定义域名）');
   }
-}
-
-function writeAdsTxt() {
-  const file = join(ROOT, DIST_DIR, 'ads.txt');
-  const client = globalThis.__ADSENSE_CLIENT__ || '';
-  if (!client) {
-    if (existsSync(file)) {
-      rmSync(file, { force: true });
-      console.log('[SSG] 已移除残留 dist/ads.txt（未配置 AdSense client）');
-    }
-    return;
-  }
-  const pubId = client.replace(/^ca-/, '');
-  writeFileSync(file, `google.com, ${pubId}, DIRECT, f08c47fec0942fa0\n`, 'utf-8');
-  console.log(`[SSG] 已写入 dist/ads.txt（${pubId}）`);
 }
 
 main().catch((err) => {

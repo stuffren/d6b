@@ -9,8 +9,6 @@ export const ENV_SCHEMA = {
   VITE_MOBILE_LADDER_DAYS: { required: false, type: 'number', default: '3' },
   VITE_LAST10_DAYS: { required: false, type: 'number', default: '10' },
   VITE_ENABLE_DRAGON_TIGER: { required: false, type: 'boolean', default: 'true' },
-  VITE_ADSENSE_CLIENT: { required: false, type: 'string', default: '' },
-  VITE_ADSENSE_SLOT: { required: false, type: 'string', default: '' },
   VITE_CUSTOM_DOMAIN: { required: false, type: 'string', default: '' }
 };
 
@@ -24,7 +22,5 @@ export const ENV_DEFINE_MAP = {
   __PAGE_LADDER_DAYS__: 'VITE_PAGE_LADDER_DAYS',
   __MOBILE_LADDER_DAYS__: 'VITE_MOBILE_LADDER_DAYS',
   __LAST10_DAYS__: 'VITE_LAST10_DAYS',
-  __ENABLE_DRAGON_TIGER__: 'VITE_ENABLE_DRAGON_TIGER',
-  __ADSENSE_CLIENT__: 'VITE_ADSENSE_CLIENT',
-  __ADSENSE_SLOT__: 'VITE_ADSENSE_SLOT'
+  __ENABLE_DRAGON_TIGER__: 'VITE_ENABLE_DRAGON_TIGER'
 };
