@@ -1,0 +1,866 @@
+{
+  "schema_version": "1.0",
+  "trade_date": "2026-11-24",
+  "themes": [
+    {
+      "name": "文化传媒",
+      "type": "sector",
+      "reason": "AI短剧与微短剧密集落地，影视院线内容供给回暖"
+    },
+    {
+      "name": "电子化学品",
+      "type": "sector",
+      "reason": "电子化学品国产替代加速，化工品价格企稳回升"
+    },
+    {
+      "name": "汽车",
+      "type": "sector",
+      "reason": "整车智能化带动零部件订单，出口与新车周期共振"
+    },
+    {
+      "name": "机器人",
+      "type": "sector",
+      "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
+    },
+    {
+      "name": "物流",
+      "type": "sector",
+      "reason": "物流板块当日涨停"
+    },
+    {
+      "name": "生肖炒作",
+      "type": "sentiment",
+      "reason": "岁末生肖与谐音标的资金抱团，短线情绪驱动"
+    },
+    {
+      "name": "其他概念",
+      "type": "other",
+      "reason": "题材分散，无明确主线"
+    }
+  ],
+  "stocks": [
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "board_count": 11,
+      "seal_time": "09:45:51",
+      "seal_amount": 77050305,
+      "theme": "生肖炒作",
+      "reason": "海洋养殖+大健康+“羊”字辈",
+      "tags": [
+        "海洋养殖",
+        "大健康",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "board_count": 11,
+      "seal_time": "14:54:16",
+      "seal_amount": 37949098,
+      "theme": "文化传媒",
+      "reason": "AI漫剧+剧集发行+北京",
+      "tags": [
+        "AI漫剧",
+        "剧集发行",
+        "北京"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002685",
+      "name": "华东重机",
+      "board_count": 6,
+      "seal_time": "13:08:33",
+      "seal_amount": 83152821,
+      "theme": "其他概念",
+      "reason": "GPU芯片+港口装卸设备+定增注册",
+      "tags": [
+        "GPU芯片",
+        "港口装卸设备",
+        "定增注册"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "board_count": 5,
+      "seal_time": "09:31:51",
+      "seal_amount": 18610373,
+      "theme": "其他概念",
+      "reason": "生猪养殖+养殖机器人+猪饲料",
+      "tags": [
+        "生猪养殖",
+        "养殖机器人",
+        "猪饲料"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "001358",
+      "name": "兴欣新材",
+      "board_count": 5,
+      "seal_time": "13:11:00",
+      "seal_amount": 15725864,
+      "theme": "电子化学品",
+      "reason": "光刻胶剥离液+电子化学品项目",
+      "tags": [
+        "光刻胶剥离液",
+        "电子化学品项目"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "board_count": 4,
+      "seal_time": "09:25:00",
+      "seal_amount": 197213389,
+      "theme": "其他概念",
+      "reason": "高阶HDI+算力+光模块PCB+人形机器人",
+      "tags": [
+        "高阶HDI",
+        "算力",
+        "光模块PCB",
+        "人形机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "board_count": 4,
+      "seal_time": "09:31:51",
+      "seal_amount": 317489910,
+      "theme": "生肖炒作",
+      "reason": "厨房小家电+机器人投资+“羊”字辈",
+      "tags": [
+        "厨房小家电",
+        "机器人投资",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603030",
+      "name": "全筑股份",
+      "board_count": 4,
+      "seal_time": "10:01:32",
+      "seal_amount": 30710431,
+      "theme": "其他概念",
+      "reason": "边缘AI算力+先进光源+智慧建筑",
+      "tags": [
+        "边缘AI算力",
+        "先进光源",
+        "智慧建筑"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603960",
+      "name": "克来机电",
+      "board_count": 3,
+      "seal_time": "09:25:01",
+      "seal_amount": 334868730,
+      "theme": "汽车",
+      "reason": "工业机器人+柔性自动化装备+AI应用",
+      "tags": [
+        "工业机器人",
+        "柔性自动化装备",
+        "AI应用"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605018",
+      "name": "长华集团",
+      "board_count": 3,
+      "seal_time": "09:25:02",
+      "seal_amount": 88040412,
+      "theme": "汽车",
+      "reason": "人形机器人+行星滚柱丝杠+汽车零部件",
+      "tags": [
+        "人形机器人",
+        "行星滚柱丝杠",
+        "汽车零部件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "001229",
+      "name": "魅视科技",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 45679156,
+      "theme": "其他概念",
+      "reason": "算力服务+AI算力采购+专业视听",
+      "tags": [
+        "算力服务",
+        "AI算力采购",
+        "专业视听"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "001278",
+      "name": "一彬科技",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 418547829,
+      "theme": "汽车",
+      "reason": "半导体掩模基板+激光除草机+汽车零部件",
+      "tags": [
+        "半导体掩模基板",
+        "激光除草机",
+        "汽车零部件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002036",
+      "name": "联创电子",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 107961902,
+      "theme": "其他概念",
+      "reason": "机器视觉+车载光学+光模块光学器件",
+      "tags": [
+        "机器视觉",
+        "车载光学",
+        "光模块光学器件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002122",
+      "name": "汇洲智能",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 170565482,
+      "theme": "机器人",
+      "reason": "撤销风险警示+物理AI+数据服务",
+      "tags": [
+        "撤销风险警示",
+        "物理AI",
+        "数据服务"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002164",
+      "name": "宁波东力",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 293216526,
+      "theme": "机器人",
+      "reason": "人形机器人+精密减速器+尼得科合作",
+      "tags": [
+        "人形机器人",
+        "精密减速器",
+        "尼得科合作"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002708",
+      "name": "光洋股份",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 171277002,
+      "theme": "汽车",
+      "reason": "机器人关节+黄山",
+      "tags": [
+        "机器人关节",
+        "黄山"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002931",
+      "name": "锋龙股份",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 145950066,
+      "theme": "机器人",
+      "reason": "机器人关节+优必选+机电组件",
+      "tags": [
+        "机器人关节",
+        "优必选",
+        "机电组件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603516",
+      "name": "淳中科技",
+      "board_count": 2,
+      "seal_time": "09:25:01",
+      "seal_amount": 70700697,
+      "theme": "其他概念",
+      "reason": "液冷服务器+音视频芯片+显控系统",
+      "tags": [
+        "液冷服务器",
+        "音视频芯片",
+        "显控系统"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "300703",
+      "name": "创源股份",
+      "board_count": 2,
+      "seal_time": "09:30:00",
+      "seal_amount": 84954292,
+      "theme": "其他概念",
+      "reason": "AI玩具+IP文创+祈福文创+国企改革",
+      "tags": [
+        "AI玩具",
+        "IP文创",
+        "祈福文创",
+        "国企改革"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301575",
+      "name": "艾芬达",
+      "board_count": 2,
+      "seal_time": "09:30:00",
+      "seal_amount": 158581304,
+      "theme": "其他概念",
+      "reason": "机器人结构件+北美头部机器人供应链+卫浴毛巾架",
+      "tags": [
+        "机器人结构件",
+        "北美头部机器人供应链",
+        "卫浴毛巾架"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603626",
+      "name": "科森科技",
+      "board_count": 2,
+      "seal_time": "09:30:11",
+      "seal_amount": 106523469,
+      "theme": "其他概念",
+      "reason": "机器人结构件+消费电子结构件+苹果供应链",
+      "tags": [
+        "机器人结构件",
+        "消费电子结构件",
+        "苹果供应链"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600814",
+      "name": "杭州解百",
+      "board_count": 2,
+      "seal_time": "09:30:25",
+      "seal_amount": 65547953,
+      "theme": "其他概念",
+      "reason": "百货零售+间接持股中科宇航+杭州",
+      "tags": [
+        "百货零售",
+        "间接持股中科宇航",
+        "杭州"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "board_count": 2,
+      "seal_time": "09:30:55",
+      "seal_amount": 68821073,
+      "theme": "其他概念",
+      "reason": "影视业务+微短剧+国企改革",
+      "tags": [
+        "影视业务",
+        "微短剧",
+        "国企改革"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603103",
+      "name": "横店影视",
+      "board_count": 2,
+      "seal_time": "09:31:24",
+      "seal_amount": 8653414,
+      "theme": "文化传媒",
+      "reason": "AI短剧+影视全产业链+IP运营",
+      "tags": [
+        "AI短剧",
+        "影视全产业链",
+        "IP运营"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603926",
+      "name": "铁流股份",
+      "board_count": 2,
+      "seal_time": "09:32:32",
+      "seal_amount": 66011508,
+      "theme": "汽车",
+      "reason": "机器人零部件+电机轴+三季报净利增长",
+      "tags": [
+        "机器人零部件",
+        "电机轴",
+        "三季报净利增长"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603666",
+      "name": "亿嘉和",
+      "board_count": 2,
+      "seal_time": "09:32:38",
+      "seal_amount": 54192625,
+      "theme": "其他概念",
+      "reason": "人形机器人+华为云合作+电力机器人",
+      "tags": [
+        "人形机器人",
+        "华为云合作",
+        "电力机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603040",
+      "name": "新坐标",
+      "board_count": 2,
+      "seal_time": "09:33:32",
+      "seal_amount": 10441382,
+      "theme": "汽车",
+      "reason": "机器人丝杠+冷精密成形+汽车零部件",
+      "tags": [
+        "机器人丝杠",
+        "冷精密成形",
+        "汽车零部件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605488",
+      "name": "福莱新材",
+      "board_count": 2,
+      "seal_time": "09:33:49",
+      "seal_amount": 136513159,
+      "theme": "其他概念",
+      "reason": "柔性传感+人形机器人",
+      "tags": [
+        "柔性传感",
+        "人形机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603662",
+      "name": "柯力传感",
+      "board_count": 2,
+      "seal_time": "09:42:13",
+      "seal_amount": 12046840,
+      "theme": "机器人",
+      "reason": "六维力传感器+人形机器人+触觉传感器+战略投资知行机器人",
+      "tags": [
+        "六维力传感器",
+        "人形机器人",
+        "触觉传感器",
+        "战略投资知行机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301252",
+      "name": "同星科技",
+      "board_count": 2,
+      "seal_time": "09:46:39",
+      "seal_amount": 17902049,
+      "theme": "其他概念",
+      "reason": "液冷服务器+人形机器人+换热器",
+      "tags": [
+        "液冷服务器",
+        "人形机器人",
+        "换热器"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301413",
+      "name": "安培龙",
+      "board_count": 2,
+      "seal_time": "09:53:00",
+      "seal_amount": 3507661,
+      "theme": "机器人",
+      "reason": "人形机器人+力传感器+压力传感器",
+      "tags": [
+        "人形机器人",
+        "力传感器",
+        "压力传感器"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603813",
+      "name": "原尚股份",
+      "board_count": 2,
+      "seal_time": "10:00:35",
+      "seal_amount": 7896315,
+      "theme": "物流",
+      "reason": "氢能物流+空港物流+跨境电商",
+      "tags": [
+        "氢能物流",
+        "空港物流",
+        "跨境电商"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "board_count": 2,
+      "seal_time": "13:39:03",
+      "seal_amount": 39231456,
+      "theme": "生肖炒作",
+      "reason": "“羊”字辈+中国航展+军工+专业照明",
+      "tags": [
+        "“羊”字辈",
+        "中国航展",
+        "军工",
+        "专业照明"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002872",
+      "name": "天圣制药",
+      "board_count": 1,
+      "seal_time": "09:30:18",
+      "seal_amount": 24749295,
+      "theme": "其他概念",
+      "reason": "复牌+撤销风险警示+医药制造",
+      "tags": [
+        "复牌",
+        "撤销风险警示",
+        "医药制造"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603956",
+      "name": "威派格",
+      "board_count": 1,
+      "seal_time": "09:30:57",
+      "seal_amount": 28859468,
+      "theme": "机器人",
+      "reason": "PCB钻针+拟收购臻璟新材+智慧水务",
+      "tags": [
+        "PCB钻针",
+        "拟收购臻璟新材",
+        "智慧水务"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603001",
+      "name": "奥康国际",
+      "board_count": 1,
+      "seal_time": "09:32:43",
+      "seal_amount": 30479490,
+      "theme": "其他概念",
+      "reason": "皮鞋皮具+协议转让完成",
+      "tags": [
+        "皮鞋皮具",
+        "协议转让完成"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603725",
+      "name": "天安新材",
+      "board_count": 1,
+      "seal_time": "09:33:01",
+      "seal_amount": 7635103,
+      "theme": "其他概念",
+      "reason": "拟收购嘉万光+机器人皮肤",
+      "tags": [
+        "拟收购嘉万光",
+        "机器人皮肤"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301189",
+      "name": "奥尼电子",
+      "board_count": 1,
+      "seal_time": "09:33:30",
+      "seal_amount": 56073523,
+      "theme": "其他概念",
+      "reason": "AI推理算力+英伟达概念+华为昇腾",
+      "tags": [
+        "AI推理算力",
+        "英伟达概念",
+        "华为昇腾"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605222",
+      "name": "起帆电缆",
+      "board_count": 1,
+      "seal_time": "09:35:14",
+      "seal_amount": 57338640,
+      "theme": "其他概念",
+      "reason": "机器人电缆+商业航天+电线电缆",
+      "tags": [
+        "机器人电缆",
+        "商业航天",
+        "电线电缆"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "688078",
+      "name": "龙软科技",
+      "board_count": 1,
+      "seal_time": "09:37:46",
+      "seal_amount": 6213928,
+      "theme": "其他概念",
+      "reason": "AI矿山+时空大模型+矿用机器人",
+      "tags": [
+        "AI矿山",
+        "时空大模型",
+        "矿用机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "300652",
+      "name": "雷迪克",
+      "board_count": 1,
+      "seal_time": "09:48:21",
+      "seal_amount": 43473760,
+      "theme": "汽车",
+      "reason": "人形机器人+微型丝杠+线性执行机构",
+      "tags": [
+        "人形机器人",
+        "微型丝杠",
+        "线性执行机构"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600189",
+      "name": "泉阳泉",
+      "board_count": 1,
+      "seal_time": "09:48:30",
+      "seal_amount": 13657139,
+      "theme": "其他概念",
+      "reason": "矿泉水+拟收购饮品公司股权",
+      "tags": [
+        "矿泉水",
+        "拟收购饮品公司股权"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002348",
+      "name": "高乐股份",
+      "board_count": 1,
+      "seal_time": "09:50:06",
+      "seal_amount": 27164844,
+      "theme": "其他概念",
+      "reason": "智慧教育款项回收+AI玩具+算力租赁",
+      "tags": [
+        "智慧教育款项回收",
+        "AI玩具",
+        "算力租赁"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "300539",
+      "name": "横河精密",
+      "board_count": 1,
+      "seal_time": "09:58:36",
+      "seal_amount": 20525671,
+      "theme": "其他概念",
+      "reason": "机器人+减速器+精密模具",
+      "tags": [
+        "机器人",
+        "减速器",
+        "精密模具"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603360",
+      "name": "百傲化学",
+      "board_count": 1,
+      "seal_time": "10:03:31",
+      "seal_amount": 38783040,
+      "theme": "其他概念",
+      "reason": "半导体设备+工业杀菌剂",
+      "tags": [
+        "半导体设备",
+        "工业杀菌剂"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "board_count": 1,
+      "seal_time": "10:15:54",
+      "seal_amount": 17666390,
+      "theme": "其他概念",
+      "reason": "航空军工+机器人概念+粉磨装备",
+      "tags": [
+        "航空军工",
+        "机器人概念",
+        "粉磨装备"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603206",
+      "name": "嘉环科技",
+      "board_count": 1,
+      "seal_time": "10:27:15",
+      "seal_amount": 40549761,
+      "theme": "其他概念",
+      "reason": "AI算力+嘉链AI平台+算力租赁",
+      "tags": [
+        "AI算力",
+        "嘉链AI平台",
+        "算力租赁"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600400",
+      "name": "红豆股份",
+      "board_count": 1,
+      "seal_time": "10:40:07",
+      "seal_amount": 45587384,
+      "theme": "其他概念",
+      "reason": "机器人+养老机器人+男装",
+      "tags": [
+        "机器人",
+        "养老机器人",
+        "男装"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603608",
+      "name": "天创股份",
+      "board_count": 1,
+      "seal_time": "10:41:55",
+      "seal_amount": 28506420,
+      "theme": "其他概念",
+      "reason": "滚珠丝杠+人形机器人",
+      "tags": [
+        "滚珠丝杠",
+        "人形机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002611",
+      "name": "东方精工",
+      "board_count": 1,
+      "seal_time": "13:00:33",
+      "seal_amount": 22490345,
+      "theme": "机器人",
+      "reason": "人形机器人+机器人数据训练+智能包装装备",
+      "tags": [
+        "人形机器人",
+        "机器人数据训练",
+        "智能包装装备"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002827",
+      "name": "高争民爆",
+      "board_count": 1,
+      "seal_time": "13:03:00",
+      "seal_amount": 80448588,
+      "theme": "电子化学品",
+      "reason": "民爆+铜锂矿注入+西藏",
+      "tags": [
+        "民爆",
+        "铜锂矿注入",
+        "西藏"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603266",
+      "name": "天龙股份",
+      "board_count": 1,
+      "seal_time": "13:47:32",
+      "seal_amount": 19151400,
+      "theme": "汽车",
+      "reason": "机器人+4D毫米波雷达+液冷水板+参股粤芯半导体",
+      "tags": [
+        "机器人",
+        "4D毫米波雷达",
+        "液冷水板",
+        "参股粤芯半导体"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "board_count": 1,
+      "seal_time": "14:26:11",
+      "seal_amount": 48672338,
+      "theme": "电子化学品",
+      "reason": "甲醇+风电项目",
+      "tags": [
+        "甲醇",
+        "风电项目"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002387",
+      "name": "维信诺",
+      "board_count": 1,
+      "seal_time": "14:40:00",
+      "seal_amount": 26540923,
+      "theme": "其他概念",
+      "reason": "荣耀700+AMOLED+ViP技术+8.6代产线",
+      "tags": [
+        "荣耀700",
+        "AMOLED",
+        "ViP技术",
+        "8.6代产线"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600261",
+      "name": "阳光照明",
+      "board_count": 1,
+      "seal_time": "14:48:42",
+      "seal_amount": 37825698,
+      "theme": "生肖炒作",
+      "reason": "商业航天+激光通信+LED照明+“羊”字辈",
+      "tags": [
+        "商业航天",
+        "激光通信",
+        "LED照明",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    }
+  ]
+}
