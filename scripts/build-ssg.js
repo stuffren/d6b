@@ -10,6 +10,8 @@ import { readFileSync, readdirSync, existsSync, rmSync, writeFileSync } from 'fs
 import { join, dirname, resolve, sep } from 'path';
 import { fileURLToPath } from 'url';
 import { createSSGEngine, escapeHtml } from '../core/ssg_build/ssg_build.js';
+import { createEnvManager } from '../core/multiple_env/multi_env.js';
+import { ENV_SCHEMA } from './env-schema.js';
 import { deployPresets } from './deploy-presets.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -46,42 +48,32 @@ function readJSON(filePath) {
   }
 }
 
-function readEnvFile() {
-  const file = join(ROOT, '.env');
-  if (!existsSync(file)) return {};
-  const out = {};
-  for (const line of readFileSync(file, 'utf-8').split(/\r?\n/)) {
-    const m = /^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$/.exec(line);
-    if (!m) continue;
-    out[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
-  }
-  return out;
-}
-
-const fileEnv = readEnvFile();
-const raw = (key, fallback) => {
-  if (process.env[key] !== undefined) return process.env[key];
-  return fallback;
-};
-
 const DEPLOY_ENV = process.env.DEPLOY_ENV || 'development';
-const PRESETS = deployPresets(DEPLOY_ENV);
-const preset = PRESETS[DEPLOY_ENV] || PRESETS.development;
 
-const siteName = raw('VITE_SITE_NAME', fileEnv.VITE_SITE_NAME ?? 'd6b');
-const basePath = raw('BASE_PATH', preset.BASE_PATH);
-const customDomain = raw('VITE_CUSTOM_DOMAIN', fileEnv.VITE_CUSTOM_DOMAIN ?? '');
+const envManager = createEnvManager({
+  envFile: '.env',
+  prefix: 'VITE_',
+  envName: DEPLOY_ENV,
+  presets: deployPresets(DEPLOY_ENV),
+  schema: ENV_SCHEMA
+});
+envManager.load();
+envManager.validate();
+
+const siteName = envManager.get('VITE_SITE_NAME');
+const basePath = envManager.get('BASE_PATH');
+const customDomain = envManager.get('VITE_CUSTOM_DOMAIN');
 const siteBaseUrl = (
-  raw('SITE_BASE_URL', null) ||
-  (DEPLOY_ENV === 'custom-domain' && customDomain ? `https://${customDomain}` : preset.SITE_BASE_URL)
+  envManager.get('SITE_BASE_URL') ||
+  (DEPLOY_ENV === 'custom-domain' && customDomain ? `https://${customDomain}` : '')
 ).replace(/\/$/, '');
-const dataDir = raw('VITE_DATA_DIR', fileEnv.VITE_DATA_DIR ?? '/data');
-const tz = raw('VITE_TZ', fileEnv.VITE_TZ ?? 'Asia/Shanghai');
-const homeLadderDays = Number(raw('VITE_HOME_LADDER_DAYS', fileEnv.VITE_HOME_LADDER_DAYS ?? '7')) || 7;
-const pageLadderDays = Number(raw('VITE_PAGE_LADDER_DAYS', fileEnv.VITE_PAGE_LADDER_DAYS ?? '10')) || 10;
-const mobileLadderDays = Number(raw('VITE_MOBILE_LADDER_DAYS', fileEnv.VITE_MOBILE_LADDER_DAYS ?? '3')) || 3;
-const last10Days = Number(raw('VITE_LAST10_DAYS', fileEnv.VITE_LAST10_DAYS ?? '10')) || 10;
-const enableDragonTiger = String(raw('VITE_ENABLE_DRAGON_TIGER', fileEnv.VITE_ENABLE_DRAGON_TIGER ?? 'true')) === 'true';
+const dataDir = envManager.get('VITE_DATA_DIR');
+const tz = envManager.get('VITE_TZ');
+const homeLadderDays = Number(envManager.get('VITE_HOME_LADDER_DAYS')) || 7;
+const pageLadderDays = Number(envManager.get('VITE_PAGE_LADDER_DAYS')) || 10;
+const mobileLadderDays = Number(envManager.get('VITE_MOBILE_LADDER_DAYS')) || 3;
+const last10Days = Number(envManager.get('VITE_LAST10_DAYS')) || 10;
+const enableDragonTiger = String(envManager.get('VITE_ENABLE_DRAGON_TIGER')) === 'true';
 const basePathWithSlash = basePath === '/' ? '/' : `${basePath.replace(/\/$/, '')}/`;
 
 const PAGE_DIRS_TO_CLEAN = [
@@ -99,8 +91,8 @@ globalThis.__PAGE_LADDER_DAYS__ = String(pageLadderDays);
 globalThis.__MOBILE_LADDER_DAYS__ = String(mobileLadderDays);
 globalThis.__LAST10_DAYS__ = String(last10Days);
 globalThis.__ENABLE_DRAGON_TIGER__ = String(enableDragonTiger);
-globalThis.__ADSENSE_CLIENT__ = raw('VITE_ADSENSE_CLIENT', fileEnv.VITE_ADSENSE_CLIENT ?? '');
-globalThis.__ADSENSE_SLOT__ = raw('VITE_ADSENSE_SLOT', fileEnv.VITE_ADSENSE_SLOT ?? '');
+globalThis.__ADSENSE_CLIENT__ = envManager.get('VITE_ADSENSE_CLIENT');
+globalThis.__ADSENSE_SLOT__ = envManager.get('VITE_ADSENSE_SLOT');
 
 const versionData = readJSON(join(DATA_DIR, 'version.json'));
 const dataVersion = versionData?.generated_at || null;

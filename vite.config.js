@@ -4,40 +4,15 @@ import { readFile, stat } from 'fs/promises';
 import { rmSync, existsSync } from 'fs';
 import { resolve, sep } from 'path';
 import { deployPresets } from './scripts/deploy-presets.js';
+import { ENV_SCHEMA, ENV_DEFINE_MAP } from './scripts/env-schema.js';
 
 const env = createEnvManager({
   envFile: '.env',
   prefix: 'VITE_',
   envName: process.env.DEPLOY_ENV || 'development',
   presets: deployPresets(process.env.DEPLOY_ENV || 'development'),
-  schema: {
-    BASE_PATH: { required: true, type: 'string', default: '/' },
-    SITE_BASE_URL: { required: true, type: 'string', default: 'http://localhost:5173' },
-    VITE_SITE_NAME: { required: true, type: 'string', default: 'd6b' },
-    VITE_DATA_DIR: { required: false, type: 'string', default: '/data' },
-    VITE_TZ: { required: false, type: 'string', default: 'Asia/Shanghai' },
-    VITE_HOME_LADDER_DAYS: { required: false, type: 'number', default: '7' },
-    VITE_PAGE_LADDER_DAYS: { required: false, type: 'number', default: '10' },
-    VITE_MOBILE_LADDER_DAYS: { required: false, type: 'number', default: '3' },
-    VITE_ENABLE_DRAGON_TIGER: { required: false, type: 'boolean', default: 'true' },
-    VITE_ADSENSE_CLIENT: { required: false, type: 'string', default: '' },
-    VITE_ADSENSE_SLOT: { required: false, type: 'string', default: '' },
-    VITE_CUSTOM_DOMAIN: { required: false, type: 'string', default: '' }
-  },
-  define: {
-    __SITE_NAME__: 'VITE_SITE_NAME',
-    __SITE_BASE_URL__: 'SITE_BASE_URL',
-    __BASE_PATH__: 'BASE_PATH',
-    __DATA_DIR__: 'VITE_DATA_DIR',
-    __TZ__: 'VITE_TZ',
-    __HOME_LADDER_DAYS__: 'VITE_HOME_LADDER_DAYS',
-    __PAGE_LADDER_DAYS__: 'VITE_PAGE_LADDER_DAYS',
-    __MOBILE_LADDER_DAYS__: 'VITE_MOBILE_LADDER_DAYS',
-    __LAST10_DAYS__: 'VITE_LAST10_DAYS',
-    __ENABLE_DRAGON_TIGER__: 'VITE_ENABLE_DRAGON_TIGER',
-    __ADSENSE_CLIENT__: 'VITE_ADSENSE_CLIENT',
-    __ADSENSE_SLOT__: 'VITE_ADSENSE_SLOT'
-  }
+  schema: ENV_SCHEMA,
+  define: ENV_DEFINE_MAP
 });
 
 env.load();
