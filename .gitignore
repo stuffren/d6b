@@ -4,6 +4,10 @@ node_modules/
 # 构建产物
 dist/
 
+# Python 虚拟环境
+.venv/
+venv/
+
 # 环境文件（仅保留 .env 模板，不提交真实配置）
 .env
 .env.local
@@ -27,21 +31,20 @@ npm-debug.log*
 *.tmp
 *.temp
 
-#源数据层doc
+# 源数据层 doc
 gather_doc/
 
-# 备份及issue
+# 备份及 issue
 _bak/
 issue/
 
 # Python 缓存
 __pycache__/
 *.pyc
+*.pyo
 
 # 采集层：保留源码与事实数据，仅排除可再生产物
 gather/logs/
 gather/data/logs/*.csv
 gather/data/limit_up/excel/
-
-
-
+gather/data/**/*.xlsx
