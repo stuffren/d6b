@@ -135,21 +135,6 @@
       "is_delisting": false
     },
     {
-      "code": "002187",
-      "name": "广百股份",
-      "board_count": 2,
-      "seal_time": "09:25:00",
-      "seal_amount": 16093730,
-      "theme": "其他概念",
-      "reason": "百货零售+免税退税+广州",
-      "tags": [
-        "百货零售",
-        "免税退税",
-        "广州"
-      ],
-      "is_delisting": false
-    },
-    {
       "code": "001358",
       "name": "兴欣新材",
       "board_count": 2,
@@ -160,6 +145,21 @@
       "tags": [
         "光刻胶剥离液",
         "电子化学品"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 16093730,
+      "theme": "其他概念",
+      "reason": "百货+免税退税+广州",
+      "tags": [
+        "百货",
+        "免税退税",
+        "广州"
       ],
       "is_delisting": false
     },
@@ -441,12 +441,12 @@
       "seal_time": "10:38:15",
       "seal_amount": 40616340,
       "theme": "汽车",
-      "reason": "资产剥离+汽车零部件+摘帽+国企改革",
+      "reason": "资产剥离+汽车零部件+摘帽+改革",
       "tags": [
         "资产剥离",
         "汽车零部件",
         "摘帽",
-        "国企改革"
+        "改革"
       ],
       "is_delisting": false
     },
@@ -472,11 +472,10 @@
       "seal_time": "10:38:54",
       "seal_amount": 41205346,
       "theme": "汽车",
-      "reason": "芯片测试+存储器+上海",
+      "reason": "芯片测试+存储器",
       "tags": [
         "芯片测试",
-        "存储器",
-        "上海"
+        "存储器"
       ],
       "is_delisting": false
     },
@@ -594,12 +593,11 @@
       "seal_time": "14:19:39",
       "seal_amount": 42372792,
       "theme": "其他概念",
-      "reason": "MOFs材料+茂金属聚烯烃+三季报扭亏+国企",
+      "reason": "MOFs材料+茂金属聚烯烃+三季报扭亏",
       "tags": [
         "MOFs材料",
         "茂金属聚烯烃",
-        "三季报扭亏",
-        "国企"
+        "三季报扭亏"
       ],
       "is_delisting": false
     }

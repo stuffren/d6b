@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-24T20:03:27",
-  "latest_date": "2026-11-24",
+  "updated_at": "2026-11-25T18:55:54",
+  "latest_date": "2026-11-25",
   "latest_kind": "dragon_tiger",
   "kinds": {
     "limit_up": {
-      "updated_at": "2026-11-24T20:03:09",
-      "latest_date": "2026-11-24",
-      "days": 22,
-      "in_state": 21
+      "updated_at": "2026-11-25T18:46:36",
+      "latest_date": "2026-11-25",
+      "days": 23,
+      "in_state": 15
     },
     "dragon_tiger": {
-      "updated_at": "2026-11-24T20:03:27",
-      "latest_date": "2026-11-24",
-      "days": 22,
-      "in_state": 8
+      "updated_at": "2026-11-25T18:55:54",
+      "latest_date": "2026-11-25",
+      "days": 23,
+      "in_state": 9
     }
   }
 }

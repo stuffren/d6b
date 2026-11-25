@@ -18,9 +18,24 @@
       "reason": "光伏板块当日涨停"
     },
     {
+      "name": "通信设备",
+      "type": "sector",
+      "reason": "通信设备板块当日涨停"
+    },
+    {
       "name": "机器人",
       "type": "sector",
       "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
+    },
+    {
+      "name": "专用设备",
+      "type": "sector",
+      "reason": "专用设备板块当日涨停"
+    },
+    {
+      "name": "消费电子",
+      "type": "sector",
+      "reason": "消费电子板块当日涨停"
     },
     {
       "name": "电子化学品",
@@ -107,10 +122,10 @@
       "seal_time": "09:25:01",
       "seal_amount": 116875219,
       "theme": "名称系炒作",
-      "reason": "“东方系”+百货零售+儿科医疗",
+      "reason": "“东方系”+百货+儿科医疗",
       "tags": [
         "“东方系”",
-        "百货零售",
+        "百货",
         "儿科医疗"
       ],
       "is_delisting": false
@@ -183,7 +198,7 @@
       "board_count": 3,
       "seal_time": "09:30:09",
       "seal_amount": 45725080,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "端侧AI+通信模组+机器人应用+划转",
       "tags": [
         "端侧AI",
@@ -214,7 +229,7 @@
       "board_count": 3,
       "seal_time": "09:31:06",
       "seal_amount": 13734798,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "光伏组件+汽车轻量化+储能+三季报减亏",
       "tags": [
         "光伏组件",
@@ -257,6 +272,36 @@
       "is_delisting": false
     },
     {
+      "code": "002209",
+      "name": "达 意 隆",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 472343091,
+      "theme": "专用设备",
+      "reason": "机器人+液态包装装备+三季报增长",
+      "tags": [
+        "机器人",
+        "液态包装装备",
+        "三季报增长"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002861",
+      "name": "瀛通通讯",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 63447624,
+      "theme": "消费电子",
+      "reason": "AI眼镜+智能声学+消费电子",
+      "tags": [
+        "AI眼镜",
+        "智能声学",
+        "消费电子"
+      ],
+      "is_delisting": false
+    },
+    {
       "code": "002160",
       "name": "常铝股份",
       "board_count": 2,
@@ -269,36 +314,6 @@
         "空调箔",
         "铝",
         "控制权变更"
-      ],
-      "is_delisting": false
-    },
-    {
-      "code": "002861",
-      "name": "瀛通通讯",
-      "board_count": 2,
-      "seal_time": "09:25:00",
-      "seal_amount": 63447624,
-      "theme": "其他概念",
-      "reason": "AI眼镜+智能声学+消费电子",
-      "tags": [
-        "AI眼镜",
-        "智能声学",
-        "消费电子"
-      ],
-      "is_delisting": false
-    },
-    {
-      "code": "002209",
-      "name": "达 意 隆",
-      "board_count": 2,
-      "seal_time": "09:25:00",
-      "seal_amount": 472343091,
-      "theme": "机器人",
-      "reason": "机器人+液态包装装备+三季报增长",
-      "tags": [
-        "机器人",
-        "液态包装装备",
-        "三季报增长"
       ],
       "is_delisting": false
     },
@@ -338,12 +353,11 @@
       "seal_time": "09:40:03",
       "seal_amount": 51950196,
       "theme": "其他概念",
-      "reason": "精密减速器+机器人+商业航天+液冷",
+      "reason": "精密减速器+机器人+商业航天",
       "tags": [
         "精密减速器",
         "机器人",
-        "商业航天",
-        "液冷"
+        "商业航天"
       ],
       "is_delisting": false
     },
@@ -413,7 +427,7 @@
       "board_count": 2,
       "seal_time": "14:35:26",
       "seal_amount": 33013371,
-      "theme": "名称系炒作",
+      "theme": "通信设备",
       "reason": "“东方”+专网通信+卫星互联网+商业航天",
       "tags": [
         "“东方”",
@@ -475,7 +489,7 @@
       "board_count": 1,
       "seal_time": "09:30:41",
       "seal_amount": 41971745,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "工业机器人+冶金装备+海外拓展",
       "tags": [
         "工业机器人",
@@ -550,7 +564,7 @@
       "board_count": 1,
       "seal_time": "09:34:08",
       "seal_amount": 423701780,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "高速光模块+北美业务正常推进",
       "tags": [
         "高速光模块",
@@ -565,11 +579,10 @@
       "seal_time": "09:35:25",
       "seal_amount": 87837019,
       "theme": "其他概念",
-      "reason": "光模块+竹浆纸+福建",
+      "reason": "光模块+竹浆纸",
       "tags": [
         "光模块",
-        "竹浆纸",
-        "福建"
+        "竹浆纸"
       ],
       "is_delisting": false
     },
@@ -579,7 +592,7 @@
       "board_count": 1,
       "seal_time": "09:36:14",
       "seal_amount": 71090883,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "光纤光缆+光通信+6G",
       "tags": [
         "光纤光缆",
@@ -594,7 +607,7 @@
       "board_count": 1,
       "seal_time": "09:36:48",
       "seal_amount": 39284742,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "深海装备+商业航天+机器人概念",
       "tags": [
         "深海装备",
@@ -610,11 +623,10 @@
       "seal_time": "09:37:36",
       "seal_amount": 46668990,
       "theme": "其他概念",
-      "reason": "钢材产品+估值提升计划+福建",
+      "reason": "钢材产品+估值提升计划",
       "tags": [
         "钢材产品",
-        "估值提升计划",
-        "福建"
+        "估值提升计划"
       ],
       "is_delisting": false
     },
@@ -682,12 +694,11 @@
       "seal_time": "09:48:19",
       "seal_amount": 45548734,
       "theme": "其他概念",
-      "reason": "工程设计+低空经济+上海微电子相关+上海",
+      "reason": "工程设计+低空经济+微电子相关",
       "tags": [
         "工程设计",
         "低空经济",
-        "上海微电子相关",
-        "上海"
+        "微电子相关"
       ],
       "is_delisting": false
     },
@@ -783,6 +794,20 @@
       "is_delisting": false
     },
     {
+      "code": "301636",
+      "name": "泽润新能",
+      "board_count": 1,
+      "seal_time": "10:07:54",
+      "seal_amount": 70677563,
+      "theme": "光伏",
+      "reason": "光伏接线盒+新能源汽车嵌件",
+      "tags": [
+        "光伏接线盒",
+        "新能源汽车嵌件"
+      ],
+      "is_delisting": false
+    },
+    {
       "code": "002362",
       "name": "汉王科技",
       "board_count": 1,
@@ -794,20 +819,6 @@
         "仿生机器人",
         "AI应用",
         "AI端侧"
-      ],
-      "is_delisting": false
-    },
-    {
-      "code": "301636",
-      "name": "泽润新能",
-      "board_count": 1,
-      "seal_time": "10:07:54",
-      "seal_amount": 70677563,
-      "theme": "光伏",
-      "reason": "光伏接线盒+新能源汽车嵌件",
-      "tags": [
-        "光伏接线盒",
-        "新能源汽车嵌件"
       ],
       "is_delisting": false
     },
@@ -937,7 +948,7 @@
       "board_count": 1,
       "seal_time": "11:22:54",
       "seal_amount": 57467521,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "MPO连接器+光通信满产+CPO",
       "tags": [
         "MPO连接器",
@@ -1103,7 +1114,7 @@
       "board_count": 1,
       "seal_time": "13:30:19",
       "seal_amount": 18538366,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "存储芯片+拟收购半导体公司+注塑机+一体化压铸",
       "tags": [
         "存储芯片",
@@ -1135,9 +1146,8 @@
       "seal_time": "13:44:38",
       "seal_amount": 221524396,
       "theme": "其他概念",
-      "reason": "AI算力PCB+光模块+前三季度业绩增长",
+      "reason": "光模块+前三季度业绩增长",
       "tags": [
-        "AI算力PCB",
         "光模块",
         "前三季度业绩增长"
       ],
@@ -1149,7 +1159,7 @@
       "board_count": 1,
       "seal_time": "13:46:42",
       "seal_amount": 223337151,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "光模块+CPO+三季报增长",
       "tags": [
         "光模块",
@@ -1194,7 +1204,7 @@
       "board_count": 1,
       "seal_time": "13:50:39",
       "seal_amount": 88112370,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "人形机器人+智能割草机器人+园林机械",
       "tags": [
         "人形机器人",
@@ -1210,9 +1220,8 @@
       "seal_time": "13:55:51",
       "seal_amount": 188290396,
       "theme": "其他概念",
-      "reason": "AI算力PCB+定增注册获批+三季报增长",
+      "reason": "定增注册获批+三季报增长",
       "tags": [
-        "AI算力PCB",
         "定增注册获批",
         "三季报增长"
       ],
@@ -1225,9 +1234,9 @@
       "seal_time": "13:57:27",
       "seal_amount": 26799446,
       "theme": "机器人",
-      "reason": "数据中心液冷+定增落地+三季报增长",
+      "reason": "数据中心+定增落地+三季报增长",
       "tags": [
-        "数据中心液冷",
+        "数据中心",
         "定增落地",
         "三季报增长"
       ],
@@ -1239,10 +1248,10 @@
       "board_count": 1,
       "seal_time": "13:58:24",
       "seal_amount": 180741176,
-      "theme": "机器人",
-      "reason": "液冷服务器+英伟达生态+英特尔验证",
+      "theme": "专用设备",
+      "reason": "服务器+英伟达生态+英特尔验证",
       "tags": [
-        "液冷服务器",
+        "服务器",
         "英伟达生态",
         "英特尔验证"
       ],
@@ -1269,7 +1278,7 @@
       "board_count": 1,
       "seal_time": "14:13:22",
       "seal_amount": 175973040,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "空芯光纤+光通信+三季报增长",
       "tags": [
         "空芯光纤",

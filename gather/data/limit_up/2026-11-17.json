@@ -3,14 +3,24 @@
   "trade_date": "2026-11-17",
   "themes": [
     {
-      "name": "机器人",
+      "name": "消费电子",
       "type": "sector",
-      "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
+      "reason": "消费电子板块当日涨停"
+    },
+    {
+      "name": "专用设备",
+      "type": "sector",
+      "reason": "专用设备板块当日涨停"
     },
     {
       "name": "电子化学品",
       "type": "sector",
       "reason": "电子化学品国产替代加速，化工品价格企稳回升"
+    },
+    {
+      "name": "机器人",
+      "type": "sector",
+      "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
     },
     {
       "name": "半导体",
@@ -56,7 +66,7 @@
       "board_count": 4,
       "seal_time": "09:38:42",
       "seal_amount": 40309749,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "AI眼镜+智能声学+消费电子",
       "tags": [
         "AI眼镜",
@@ -206,7 +216,7 @@
       "board_count": 1,
       "seal_time": "09:30:15",
       "seal_amount": 16921190,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "机器人+煤矿机械+储能",
       "tags": [
         "机器人",
@@ -267,9 +277,9 @@
       "seal_time": "09:33:33",
       "seal_amount": 60680426,
       "theme": "其他概念",
-      "reason": "液冷算力+华为+AI应用",
+      "reason": "算力+华为+AI应用",
       "tags": [
-        "液冷算力",
+        "算力",
         "华为",
         "AI应用"
       ],
@@ -434,11 +444,10 @@
       "seal_time": "10:23:13",
       "seal_amount": 79865617,
       "theme": "其他概念",
-      "reason": "空调压缩机+光刻机冷却+上海",
+      "reason": "空调压缩机+光刻机冷却",
       "tags": [
         "空调压缩机",
-        "光刻机冷却",
-        "上海"
+        "光刻机冷却"
       ],
       "is_delisting": false
     },
@@ -449,11 +458,10 @@
       "seal_time": "10:28:34",
       "seal_amount": 87000778,
       "theme": "电子化学品",
-      "reason": "湿电子化学品+存储芯片+上海",
+      "reason": "湿电子化学品+存储芯片",
       "tags": [
         "湿电子化学品",
-        "存储芯片",
-        "上海"
+        "存储芯片"
       ],
       "is_delisting": false
     },
@@ -523,7 +531,7 @@
       "board_count": 1,
       "seal_time": "11:07:27",
       "seal_amount": 28915948,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "消费电子+精密结构件+折叠屏",
       "tags": [
         "消费电子",

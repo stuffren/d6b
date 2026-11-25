@@ -8,6 +8,11 @@
       "reason": "AI短剧与微短剧密集落地，影视院线内容供给回暖"
     },
     {
+      "name": "消费电子",
+      "type": "sector",
+      "reason": "消费电子板块当日涨停"
+    },
+    {
       "name": "电子化学品",
       "type": "sector",
       "reason": "电子化学品国产替代加速，化工品价格企稳回升"
@@ -23,6 +28,11 @@
       "reason": "整车智能化带动零部件订单，出口与新车周期共振"
     },
     {
+      "name": "通信设备",
+      "type": "sector",
+      "reason": "通信设备板块当日涨停"
+    },
+    {
       "name": "生肖炒作",
       "type": "sentiment",
       "reason": "岁末生肖与谐音标的资金抱团，短线情绪驱动"
@@ -35,17 +45,31 @@
   ],
   "stocks": [
     {
+      "code": "600715",
+      "name": "文投控股",
+      "board_count": 11,
+      "seal_time": "09:30:24",
+      "seal_amount": 28809968,
+      "theme": "文化传媒",
+      "reason": "AI漫剧+剧集发行+北京",
+      "tags": [
+        "AI漫剧",
+        "剧集发行",
+        "北京"
+      ],
+      "is_delisting": false
+    },
+    {
       "code": "601188",
       "name": "龙江交通",
       "board_count": 7,
       "seal_time": "09:38:28",
       "seal_amount": 82480708,
       "theme": "其他概念",
-      "reason": "冰雪旅游保障+高速公路运营+黑龙江",
+      "reason": "冰雪旅游保障+高速公路运营",
       "tags": [
         "冰雪旅游保障",
-        "高速公路运营",
-        "黑龙江"
+        "高速公路运营"
       ],
       "is_delisting": false
     },
@@ -100,9 +124,9 @@
       "seal_time": "09:30:03",
       "seal_amount": 199469394,
       "theme": "其他概念",
-      "reason": "百货零售+免税退税+广州",
+      "reason": "百货+免税退税+广州",
       "tags": [
-        "百货零售",
+        "百货",
         "免税退税",
         "广州"
       ],
@@ -128,12 +152,27 @@
       "board_count": 3,
       "seal_time": "13:05:57",
       "seal_amount": 58792691,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "AI眼镜+智能声学+消费电子",
       "tags": [
         "AI眼镜",
         "智能声学",
         "消费电子"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 20212660,
+      "theme": "其他概念",
+      "reason": "MOFs材料+茂金属聚烯烃+三季报扭亏",
+      "tags": [
+        "MOFs材料",
+        "茂金属聚烯烃",
+        "三季报扭亏"
       ],
       "is_delisting": false
     },
@@ -213,31 +252,16 @@
       "is_delisting": false
     },
     {
-      "code": "600715",
-      "name": "文投控股",
-      "board_count": 1,
-      "seal_time": "09:32:33",
-      "seal_amount": 57362499,
-      "theme": "文化传媒",
-      "reason": "AI漫剧+剧集发行+北京",
-      "tags": [
-        "AI漫剧",
-        "剧集发行",
-        "北京"
-      ],
-      "is_delisting": false
-    },
-    {
       "code": "002419",
       "name": "天虹股份",
       "board_count": 1,
       "seal_time": "09:32:33",
       "seal_amount": 57362499,
       "theme": "其他概念",
-      "reason": "“AI+零售”+超市调改",
+      "reason": "“AI+”+超市调改",
       "tags": [
         "“AI",
-        "零售”",
+        "”",
         "超市调改"
       ],
       "is_delisting": false
@@ -249,11 +273,11 @@
       "seal_time": "09:36:00",
       "seal_amount": 19039431,
       "theme": "其他概念",
-      "reason": "综合能源站+风光制氢+商贸零售",
+      "reason": "综合能源站+风光制氢+商贸",
       "tags": [
         "综合能源站",
         "风光制氢",
-        "商贸零售"
+        "商贸"
       ],
       "is_delisting": false
     },
@@ -278,11 +302,10 @@
       "seal_time": "09:46:34",
       "seal_amount": 41098976,
       "theme": "汽车",
-      "reason": "汽车贸易+有色金属交易平台+上海",
+      "reason": "汽车贸易+有色金属交易平台",
       "tags": [
         "汽车贸易",
-        "有色金属交易平台",
-        "上海"
+        "有色金属交易平台"
       ],
       "is_delisting": false
     },
@@ -308,11 +331,24 @@
       "seal_time": "09:47:45",
       "seal_amount": 13219632,
       "theme": "其他概念",
-      "reason": "B股估值提升+家电+国企",
+      "reason": "B股估值提升+家电",
       "tags": [
         "B股估值提升",
-        "家电",
-        "国企"
+        "家电"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002035",
+      "name": "华帝股份",
+      "board_count": 1,
+      "seal_time": "09:48:45",
+      "seal_amount": 23225904,
+      "theme": "其他概念",
+      "reason": "厨电+高股息",
+      "tags": [
+        "厨电",
+        "高股息"
       ],
       "is_delisting": false
     },
@@ -362,11 +398,40 @@
       "is_delisting": false
     },
     {
-      "code": "002959",
-      "name": "小熊电器",
+      "code": "300530",
+      "name": "领湃科技",
+      "board_count": 1,
+      "seal_time": "10:35:57",
+      "seal_amount": 98337305,
+      "theme": "其他概念",
+      "reason": "储能电池+钠离子电池",
+      "tags": [
+        "储能电池",
+        "钠离子电池"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603983",
+      "name": "丸美生物",
       "board_count": 1,
       "seal_time": "10:36:13",
       "seal_amount": 63040032,
+      "theme": "其他概念",
+      "reason": "重组胶原蛋白+眼部护理+大消费",
+      "tags": [
+        "重组胶原蛋白",
+        "眼部护理",
+        "大消费"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002959",
+      "name": "小熊电器",
+      "board_count": 1,
+      "seal_time": "10:42:54",
+      "seal_amount": 34335249,
       "theme": "其他概念",
       "reason": "小家电+跨境电商+母婴产品",
       "tags": [
@@ -442,12 +507,11 @@
       "board_count": 1,
       "seal_time": "11:22:14",
       "seal_amount": 80611991,
-      "theme": "其他概念",
-      "reason": "数据中心交换机+具身机器人代工+国企",
+      "theme": "通信设备",
+      "reason": "数据中心交换机+具身机器人代工",
       "tags": [
         "数据中心交换机",
-        "具身机器人代工",
-        "国企"
+        "具身机器人代工"
       ],
       "is_delisting": false
     }

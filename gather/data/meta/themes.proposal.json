@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-16",
-  "total_tags": 971,
-  "proposed": 168,
-  "min_count": 3,
+  "generated_at": "2026-11-25",
+  "total_tags": 1064,
+  "proposed": 87,
+  "min_count": 5,
   "instructions": [
-    "对每项的 accept 填 true 或 false;其余项保持 null 表示暂不处理",
-    "accept=true 且 action=append:把 tag 追加到 target 题材的别名",
-    "accept=true 且 action=new:以 tag 为名新建题材，可在 target 填归入的父题材名",
-    "accept=true 且 action=sentiment:把 tag 追加到 target 情绪题材",
-    "accept=true 且 action=event:把 tag 加入 event 列表",
-    "accept=true 且 action=ignore:把 tag 加入 ignore 噪声词",
+    "对每项的 accept 填 true 或 false；其余项保持 null 表示暂不处理",
+    "accept=true 且 action=append：把 tag 追加到 target 题材的别名",
+    "accept=true 且 action=new：以 tag 为名新建题材，可在 target 填归入的父题材名",
+    "accept=true 且 action=sentiment：把 tag 追加到 target 情绪题材",
+    "accept=true 且 action=event：把 tag 加入 event 列表",
+    "accept=true 且 action=ignore：把 tag 加入 ignore 噪声词",
     "reason 可留空，填写后会写入 reasons 段作为该题材的驱动逻辑",
     "改完后执行 python theme_review.py apply"
   ],
   "items": [
     {
       "tag": "三季报增长",
-      "count": 120,
+      "count": 105,
       "samples": [
         "青岛食品",
-        "海洋王",
-        "青岛食品"
+        "中谷物流",
+        "长城科技"
       ],
       "action": "event",
       "target": "三季报增长",
@@ -28,34 +28,8 @@
       "reason": ""
     },
     {
-      "tag": "“羊”字辈",
-      "count": 51,
-      "samples": [
-        "百洋股份",
-        "东方海洋",
-        "三羊马"
-      ],
-      "action": "sentiment",
-      "target": "生肖炒作",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "三季报扭亏",
-      "count": 26,
-      "samples": [
-        "天邑股份",
-        "科森科技",
-        "必易微"
-      ],
-      "action": "event",
-      "target": "三季报扭亏",
-      "accept": true,
-      "reason": ""
-    },
-    {
       "tag": "人形机器人",
-      "count": 25,
+      "count": 43,
       "samples": [
         "多伦科技",
         "华新精科",
@@ -67,21 +41,99 @@
       "reason": ""
     },
     {
+      "tag": "三季报扭亏",
+      "count": 22,
+      "samples": [
+        "天邑股份",
+        "科森科技",
+        "红太阳"
+      ],
+      "action": "event",
+      "target": "三季报扭亏",
+      "accept": true,
+      "reason": ""
+    },
+    {
       "tag": "商业航天",
-      "count": 25,
+      "count": 21,
       "samples": [
         "今创集团",
-        "阳光照明",
-        "钧达股份"
+        "上海港湾",
+        "中国卫星"
       ],
       "action": "append",
-      "target": "军工",
+      "target": "商业航天",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "算力租赁",
+      "count": 19,
+      "samples": [
+        "青云科技-U",
+        "华升股份",
+        "中青宝"
+      ],
+      "action": "append",
+      "target": "算力",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "机器人",
+      "count": 17,
+      "samples": [
+        "朗特智能",
+        "泛亚微透",
+        "润建股份"
+      ],
+      "action": "append",
+      "target": "机器人",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "固态电池",
+      "count": 17,
+      "samples": [
+        "上海洗霸",
+        "上海洗霸",
+        "联赢激光"
+      ],
+      "action": "append",
+      "target": "新能源电池",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "AI眼镜",
+      "count": 17,
+      "samples": [
+        "芯瑞达",
+        "国光电器",
+        "国光电器"
+      ],
+      "action": "append",
+      "target": "AI终端",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "AI应用",
+      "count": 16,
+      "samples": [
+        "国脉科技",
+        "国脉科技",
+        "中原高速"
+      ],
+      "action": "append",
+      "target": "AI应用",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "百货零售",
-      "count": 15,
+      "count": 16,
       "samples": [
         "茂业商业",
         "广百股份",
@@ -94,11 +146,11 @@
     },
     {
       "tag": "三季报高增",
-      "count": 15,
+      "count": 13,
       "samples": [
         "金安国纪",
-        "富瀚微",
-        "金安国纪"
+        "金安国纪",
+        "洪通燃气"
       ],
       "action": "event",
       "target": "三季报高增",
@@ -106,99 +158,34 @@
       "reason": ""
     },
     {
-      "tag": "固态电池",
-      "count": 14,
-      "samples": [
-        "上海洗霸",
-        "上海洗霸",
-        "联赢激光"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "端侧AI",
-      "count": 13,
-      "samples": [
-        "富瀚微",
-        "宸展光电",
-        "瑞芯微"
-      ],
-      "action": "append",
-      "target": "AI终端",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "回购",
+      "tag": "PCB",
       "count": 12,
       "samples": [
-        "达瑞电子",
-        "清源股份",
-        "强一股份"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": false,
-      "reason": ""
-    },
-    {
-      "tag": "机器人",
-      "count": 11,
-      "samples": [
-        "朗特智能",
-        "泛亚微透",
-        "润建股份"
+        "方正科技",
+        "澳弘电子",
+        "满坤科技"
       ],
       "action": "append",
-      "target": "机器人",
+      "target": "PCB",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "大消费",
-      "count": 11,
+      "tag": "AI服务器",
+      "count": 12,
       "samples": [
-        "巴比食品",
-        "泉阳泉",
-        "好想你"
+        "金安国纪",
+        "澳弘电子",
+        "艾华集团"
       ],
       "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "AI眼镜",
-      "count": 11,
-      "samples": [
-        "芯瑞达",
-        "国光电器",
-        "国光电器"
-      ],
-      "action": "append",
-      "target": "AI终端",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "“东方”",
-      "count": 11,
-      "samples": [
-        "大东方",
-        "日出东方",
-        "东方创业"
-      ],
-      "action": "sentiment",
-      "target": "名称系炒作",
+      "target": "半导体",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "白酒",
-      "count": 10,
+      "count": 11,
       "samples": [
         "皇台酒业",
         "古井贡酒",
@@ -210,12 +197,12 @@
       "reason": ""
     },
     {
-      "tag": "AI服务器",
+      "tag": "数据中心",
       "count": 10,
       "samples": [
-        "金安国纪",
-        "澳弘电子",
-        "艾华集团"
+        "城地香江",
+        "顺钠股份",
+        "维通利"
       ],
       "action": "append",
       "target": "算力",
@@ -223,28 +210,28 @@
       "reason": ""
     },
     {
-      "tag": "次新股",
+      "tag": "算力服务",
       "count": 10,
       "samples": [
-        "陕西旅游",
-        "马矿股份",
-        "马矿股份"
+        "侨银股份",
+        "香江控股",
+        "华胜天成"
       ],
-      "action": "event",
-      "target": "次新股",
-      "accept": null,
+      "action": "append",
+      "target": "算力",
+      "accept": true,
       "reason": ""
     },
     {
-      "tag": "“东方系”",
+      "tag": "算力",
       "count": 10,
       "samples": [
-        "大东方",
-        "日出东方",
-        "东方环宇"
+        "旋极信息",
+        "常山北明",
+        "证通电子"
       ],
-      "action": "sentiment",
-      "target": "名称系炒作",
+      "action": "append",
+      "target": "算力",
       "accept": true,
       "reason": ""
     },
@@ -262,41 +249,93 @@
       "reason": ""
     },
     {
-      "tag": "光伏",
+      "tag": "预制菜",
       "count": 9,
       "samples": [
-        "永臻股份",
-        "永臻股份",
-        "永臻股份"
+        "惠发食品",
+        "惠发食品",
+        "惠发食品"
       ],
       "action": "append",
-      "target": "光伏",
+      "target": "大消费",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "半导体设备",
+      "tag": "大消费",
       "count": 9,
       "samples": [
-        "先导基电",
-        "京仪装备",
-        "北方华创"
+        "巴比食品",
+        "泉阳泉",
+        "浙江东日"
       ],
       "action": "append",
-      "target": "算力",
+      "target": "大消费",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "体外诊断",
-      "count": 8,
+      "tag": "国企改革",
+      "count": 9,
       "samples": [
-        "东方海洋",
-        "东方海洋",
-        "东方海洋"
+        "红太阳",
+        "黑牡丹",
+        "恒润股份"
+      ],
+      "action": "new",
+      "target": "国企改革",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "光模块",
+      "count": 9,
+      "samples": [
+        "满坤科技",
+        "快克智能",
+        "青山纸业"
       ],
       "action": "append",
-      "target": "医药",
+      "target": "半导体",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "端侧AI",
+      "count": 9,
+      "samples": [
+        "宸展光电",
+        "润欣科技",
+        "日海智能"
+      ],
+      "action": "append",
+      "target": "AI终端",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "AI漫剧",
+      "count": 9,
+      "samples": [
+        "德才股份",
+        "浙文影业",
+        "德才股份"
+      ],
+      "action": "append",
+      "target": "AI应用",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "国企",
+      "count": 9,
+      "samples": [
+        "航发科技",
+        "郑州煤电",
+        "岳阳兴长"
+      ],
+      "action": "ignore",
+      "target": "",
       "accept": true,
       "reason": ""
     },
@@ -309,72 +348,7 @@
         "闽发铝业"
       ],
       "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "AI应用",
-      "count": 8,
-      "samples": [
-        "国脉科技",
-        "国脉科技",
-        "中原高速"
-      ],
-      "action": "append",
-      "target": "AI应用",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "光通信",
-      "count": 8,
-      "samples": [
-        "科瑞思",
-        "弘景光电",
-        "福晶科技"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "海峡两岸",
-      "count": 8,
-      "samples": [
-        "九牧王",
-        "福建金森",
-        "七 匹 狼"
-      ],
-      "action": "append",
-      "target": "海峡两岸",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "存储芯片",
-      "count": 8,
-      "samples": [
-        "盈方微",
-        "园林股份",
-        "托伦斯"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "PCB",
-      "count": 8,
-      "samples": [
-        "方正科技",
-        "澳弘电子",
-        "满坤科技"
-      ],
-      "action": "append",
-      "target": "算力",
+      "target": "有色金属",
       "accept": true,
       "reason": ""
     },
@@ -392,21 +366,164 @@
       "reason": ""
     },
     {
-      "tag": "超跌反弹",
+      "tag": "冰雪旅游保障",
       "count": 8,
       "samples": [
-        "鲁阳节能",
-        "华瓷股份",
-        "三峡新材"
+        "龙江交通",
+        "龙江交通",
+        "龙江交通"
+      ],
+      "action": "append",
+      "target": "冰雪经济",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "高速公路运营",
+      "count": 8,
+      "samples": [
+        "龙江交通",
+        "龙江交通",
+        "龙江交通"
+      ],
+      "action": "append",
+      "target": "交通运输",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "创新药",
+      "count": 8,
+      "samples": [
+        "桂林三金",
+        "桂林三金",
+        "金陵药业"
+      ],
+      "action": "append",
+      "target": "医药",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "次新股",
+      "count": 8,
+      "samples": [
+        "陕西旅游",
+        "马矿股份",
+        "马矿股份"
       ],
       "action": "event",
-      "target": "超跌反弹",
+      "target": "次新股",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "AI算力",
+      "count": 8,
+      "samples": [
+        "海星股份",
+        "华胜天成",
+        "法狮龙"
+      ],
+      "action": "append",
+      "target": "算力",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "猪饲料",
+      "count": 8,
+      "samples": [
+        "邦基科技",
+        "金新农",
+        "金新农"
+      ],
+      "action": "append",
+      "target": "大农业",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "生猪养殖",
+      "count": 8,
+      "samples": [
+        "邦基科技",
+        "金新农",
+        "金新农"
+      ],
+      "action": "append",
+      "target": "大农业",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "黑龙江",
+      "count": 8,
+      "samples": [
+        "龙江交通",
+        "龙江交通",
+        "龙建股份"
+      ],
+      "action": "ignore",
+      "target": "",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "消费电子",
+      "count": 8,
+      "samples": [
+        "智动力",
+        "瀛通通讯",
+        "瀛通通讯"
+      ],
+      "action": "new",
+      "target": "",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "光通信",
+      "count": 7,
+      "samples": [
+        "科瑞思",
+        "弘景光电",
+        "福晶科技"
+      ],
+      "action": "append",
+      "target": "通信设备",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "海峡两岸",
+      "count": 7,
+      "samples": [
+        "九牧王",
+        "福建金森",
+        "七 匹 狼"
+      ],
+      "action": "append",
+      "target": "海峡两岸",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "上海",
+      "count": 7,
+      "samples": [
+        "锦江酒店",
+        "龙头股份",
+        "上海九百"
+      ],
+      "action": "ignore",
+      "target": "",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "光伏边框",
-      "count": 8,
+      "count": 7,
       "samples": [
         "闽发铝业",
         "闽发铝业",
@@ -418,119 +535,41 @@
       "reason": ""
     },
     {
-      "tag": "AI漫剧",
-      "count": 8,
+      "tag": "建筑装饰",
+      "count": 7,
       "samples": [
         "德才股份",
+        "德才股份",
+        "金 螳 螂"
+      ],
+      "action": "append",
+      "target": "地产产业链",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "微短剧",
+      "count": 7,
+      "samples": [
         "浙文影业",
-        "德才股份"
+        "浙文影业",
+        "浙文影业"
       ],
       "action": "append",
-      "target": "AI应用",
+      "target": "文化传媒",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "股份回购",
-      "count": 7,
+      "tag": "定增注册",
+      "count": 6,
       "samples": [
-        "新华百货",
-        "惠发食品",
-        "惠发食品"
+        "海量数据",
+        "海量数据",
+        "华东重机"
       ],
-      "action": "ignore",
+      "action": "event",
       "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "光伏玻璃",
-      "count": 7,
-      "samples": [
-        "亚玛顿",
-        "亚玛顿",
-        "安彩高科"
-      ],
-      "action": "append",
-      "target": "光伏",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "医疗服务",
-      "count": 7,
-      "samples": [
-        "澳洋健康",
-        "澳洋健康",
-        "澳洋健康"
-      ],
-      "action": "append",
-      "target": "医药",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "天然气",
-      "count": 7,
-      "samples": [
-        "洪通燃气",
-        "东方环宇",
-        "东方环宇"
-      ],
-      "action": "append",
-      "target": "天然气",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "光模块",
-      "count": 7,
-      "samples": [
-        "满坤科技",
-        "快克智能",
-        "思瑞浦"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "储能",
-      "count": 7,
-      "samples": [
-        "清源股份",
-        "中成股份",
-        "日出东方"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "先进封装",
-      "count": 7,
-      "samples": [
-        "托伦斯",
-        "通富微电",
-        "芯源微"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "CPO",
-      "count": 7,
-      "samples": [
-        "长电科技",
-        "联创电子",
-        "致尚科技"
-      ],
-      "action": "append",
-      "target": "算力",
       "accept": true,
       "reason": ""
     },
@@ -548,101 +587,75 @@
       "reason": ""
     },
     {
-      "tag": "玻璃基板",
+      "tag": "具身智能",
       "count": 6,
       "samples": [
-        "亚玛顿",
-        "亚玛顿",
-        "沃格光电"
+        "上纬新材",
+        "多伦科技",
+        "传智教育"
       ],
       "action": "append",
-      "target": "玻璃基板",
+      "target": "机器人",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "脑机接口",
+      "tag": "汽车零部件",
       "count": 6,
       "samples": [
-        "澳洋健康",
-        "澳洋健康",
-        "澳洋健康"
+        "东贝集团",
+        "横河精密",
+        "凯迪股份"
       ],
       "action": "append",
-      "target": "医药",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "控股",
-      "count": 6,
-      "samples": [
-        "澳洋健康",
-        "澳洋健康",
-        "澳洋健康"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "冰雪旅游保障",
-      "count": 6,
-      "samples": [
-        "龙江交通",
-        "龙江交通",
-        "龙江交通"
-      ],
-      "action": "append",
-      "target": "冰雪经济",
+      "target": "汽车",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "高速公路运营",
+      "tag": "覆铜板",
       "count": 6,
       "samples": [
-        "龙江交通",
-        "龙江交通",
-        "龙江交通"
+        "金安国纪",
+        "金安国纪",
+        "金安国纪"
       ],
       "action": "append",
-      "target": "航运",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "预制菜",
-      "count": 6,
-      "samples": [
-        "惠发食品",
-        "惠发食品",
-        "惠发食品"
-      ],
-      "action": "append",
-      "target": "大消费",
+      "target": "PCB",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "三季报大增",
+      "tag": "机器人结构件",
       "count": 6,
       "samples": [
-        "永安药业",
-        "黑芝麻",
-        "中电港"
+        "科森科技",
+        "毅昌科技",
+        "科森科技"
       ],
-      "action": "event",
-      "target": "三季报大增",
+      "action": "append",
+      "target": "机器人",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "创新药",
+      "tag": "AI玩具",
       "count": 6,
       "samples": [
-        "万邦医药",
+        "实丰文化",
+        "实丰文化",
+        "创源股份"
+      ],
+      "action": "append",
+      "target": "AI终端",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "中成药",
+      "count": 6,
+      "samples": [
+        "桂林三金",
         "桂林三金",
         "桂林三金"
       ],
@@ -652,54 +665,223 @@
       "reason": ""
     },
     {
-      "tag": "控制权变更",
+      "tag": "天然气",
       "count": 6,
       "samples": [
-        "百花医药",
-        "亚玛顿",
-        "常铝股份"
-      ],
-      "action": "event",
-      "target": "控制权变更",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "微短剧",
-      "count": 6,
-      "samples": [
-        "浙文影业",
-        "华阳国际",
-        "浙文影业"
+        "洪通燃气",
+        "德龙汇能",
+        "胜利股份"
       ],
       "action": "append",
-      "target": "AI应用",
+      "target": "公用事业",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "黑龙江",
+      "tag": "福建",
       "count": 6,
       "samples": [
-        "龙江交通",
-        "龙江交通",
-        "龙建股份"
+        "福建水泥",
+        "青山纸业",
+        "三钢闽光"
       ],
-      "action": "append",
-      "target": "冰雪经济",
+      "action": "ignore",
+      "target": "",
       "accept": true,
       "reason": ""
     },
     {
-      "tag": "海参养殖",
-      "count": 5,
+      "tag": "零售",
+      "count": 6,
       "samples": [
-        "东方海洋",
-        "东方海洋",
-        "东方海洋"
+        "友好集团",
+        "友好集团",
+        "丽人丽妆"
+      ],
+      "action": "ignore",
+      "target": "",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "柔性传感",
+      "count": 6,
+      "samples": [
+        "福莱新材",
+        "福莱新材",
+        "福莱新材"
+      ],
+      "action": "append",
+      "target": "机器人",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "半导体设备",
+      "count": 6,
+      "samples": [
+        "大族激光",
+        "德尔未来",
+        "康欣新材"
+      ],
+      "action": "append",
+      "target": "半导体",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "CPO",
+      "count": 6,
+      "samples": [
+        "联创电子",
+        "致尚科技",
+        "华盛昌"
+      ],
+      "action": "append",
+      "target": "通信设备",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "四足机器人",
+      "count": 6,
+      "samples": [
+        "北纬科技",
+        "北纬科技",
+        "北纬科技"
+      ],
+      "action": "append",
+      "target": "机器人",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "手机游戏",
+      "count": 6,
+      "samples": [
+        "北纬科技",
+        "北纬科技",
+        "北纬科技"
+      ],
+      "action": "append",
+      "target": "文化传媒",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "物联网",
+      "count": 6,
+      "samples": [
+        "北纬科技",
+        "北纬科技",
+        "北纬科技"
+      ],
+      "action": "new",
+      "target": "",
+      "accept": null,
+      "reason": ""
+    },
+    {
+      "tag": "海参",
+      "count": 6,
+      "samples": [
+        "好当家",
+        "好当家",
+        "好当家"
       ],
       "action": "append",
       "target": "大农业",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "GPU芯片",
+      "count": 6,
+      "samples": [
+        "华东重机",
+        "华东重机",
+        "华东重机"
+      ],
+      "action": "append",
+      "target": "半导体",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "港口装卸设备",
+      "count": 6,
+      "samples": [
+        "华东重机",
+        "华东重机",
+        "华东重机"
+      ],
+      "action": "append",
+      "target": "专用设备",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "半导体附属装备",
+      "count": 6,
+      "samples": [
+        "盛剑科技",
+        "盛剑科技",
+        "盛剑科技"
+      ],
+      "action": "append",
+      "target": "半导体",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "电子化学品",
+      "count": 6,
+      "samples": [
+        "盛剑科技",
+        "盛剑科技",
+        "盛剑科技"
+      ],
+      "action": "append",
+      "target": "电子化学品",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "华为昇腾",
+      "count": 6,
+      "samples": [
+        "卡莱特",
+        "华胜天成",
+        "真视通"
+      ],
+      "action": "append",
+      "target": "算力",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "流感",
+      "count": 6,
+      "samples": [
+        "特一药业",
+        "亨迪药业",
+        "拓新药业"
+      ],
+      "action": "append",
+      "target": "医药",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "商贸零售",
+      "count": 5,
+      "samples": [
+        "上海九百",
+        "上海九百",
+        "上海九百"
+      ],
+      "action": "append",
+      "target": "大消费",
       "accept": true,
       "reason": ""
     },
@@ -717,28 +899,15 @@
       "reason": ""
     },
     {
-      "tag": "饼干食品",
+      "tag": "LNG运贸",
       "count": 5,
       "samples": [
-        "青岛食品",
-        "青岛食品",
-        "青岛食品"
+        "胜通能源",
+        "胜通能源",
+        "胜通能源"
       ],
       "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "休闲食品",
-      "count": 5,
-      "samples": [
-        "良品铺子",
-        "桂发祥",
-        "桂发祥"
-      ],
-      "action": "append",
-      "target": "大消费",
+      "target": "交通运输",
       "accept": true,
       "reason": ""
     },
@@ -756,15 +925,41 @@
       "reason": ""
     },
     {
-      "tag": "汽车零部件",
+      "tag": "免税退税",
       "count": 5,
       "samples": [
-        "东贝集团",
-        "横河精密",
-        "凯迪股份"
+        "广百股份",
+        "广百股份",
+        "广百股份"
       ],
       "action": "append",
-      "target": "汽车",
+      "target": "大消费",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "氢能",
+      "count": 5,
+      "samples": [
+        "卧龙新能",
+        "德龙汇能",
+        "德龙汇能"
+      ],
+      "action": "append",
+      "target": "新能源",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "存储芯片",
+      "count": 5,
+      "samples": [
+        "盈方微",
+        "园林股份",
+        "快克智能"
+      ],
+      "action": "append",
+      "target": "半导体",
       "accept": true,
       "reason": ""
     },
@@ -777,780 +972,26 @@
         "博杰股份"
       ],
       "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "LED照明",
-      "count": 5,
-      "samples": [
-        "阳光照明",
-        "阳光照明",
-        "勤上股份"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "陶瓷纤维",
-      "count": 5,
-      "samples": [
-        "鲁阳节能",
-        "鲁阳节能",
-        "鲁阳节能"
-      ],
-      "action": "append",
-      "target": "电子化学品",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "锂电隔热",
-      "count": 5,
-      "samples": [
-        "鲁阳节能",
-        "鲁阳节能",
-        "鲁阳节能"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "液冷",
-      "count": 5,
-      "samples": [
-        "统一股份",
-        "龙蟠科技",
-        "双良节能"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "电池铝箔",
-      "count": 5,
-      "samples": [
-        "永臻股份",
-        "永臻股份",
-        "永臻股份"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "儿科医疗",
-      "count": 5,
-      "samples": [
-        "大东方",
-        "大东方",
-        "大东方"
-      ],
-      "action": "append",
-      "target": "医药",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "水产加工",
-      "count": 4,
-      "samples": [
-        "百洋股份",
-        "百洋股份",
-        "百洋股份"
-      ],
-      "action": "append",
-      "target": "大农业",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "鱼粉鱼油",
-      "count": 4,
-      "samples": [
-        "百洋股份",
-        "百洋股份",
-        "百洋股份"
-      ],
-      "action": "append",
-      "target": "大农业",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "数据采集手套",
-      "count": 4,
-      "samples": [
-        "福莱新材",
-        "福莱新材",
-        "福莱新材"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "AI医疗",
-      "count": 4,
-      "samples": [
-        "延华智能",
-        "润达医疗",
-        "贝瑞基因"
-      ],
-      "action": "append",
-      "target": "医药",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "LNG运贸",
-      "count": 4,
-      "samples": [
-        "胜通能源",
-        "胜通能源",
-        "胜通能源"
-      ],
-      "action": "append",
-      "target": "航运",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "乳制品",
-      "count": 4,
-      "samples": [
-        "阳光乳业",
-        "阳光乳业",
-        "南侨食品"
-      ],
-      "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "具身智能",
-      "count": 4,
-      "samples": [
-        "上纬新材",
-        "多伦科技",
-        "传智教育"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "羽毛球机器人",
-      "count": 4,
-      "samples": [
-        "大千生态",
-        "大千生态",
-        "大千生态"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "免税退税",
-      "count": 4,
-      "samples": [
-        "广百股份",
-        "广百股份",
-        "广百股份"
-      ],
-      "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "覆铜板",
-      "count": 4,
-      "samples": [
-        "金安国纪",
-        "金安国纪",
-        "金安国纪"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "三季报",
-      "count": 4,
-      "samples": [
-        "振邦智能",
-        "长缆科技",
-        "古井贡酒"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "水溶性维生素试剂",
-      "count": 4,
-      "samples": [
-        "东方海洋",
-        "东方海洋",
-        "东方海洋"
-      ],
-      "action": "append",
-      "target": "电子化学品",
+      "target": "半导体",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "金融科技",
-      "count": 4,
+      "count": 5,
       "samples": [
         "爱建集团",
         "银之杰",
         "顶点软件"
       ],
-      "action": "new",
-      "target": "",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "中成药",
-      "count": 4,
-      "samples": [
-        "桂林三金",
-        "桂林三金",
-        "桂林三金"
-      ],
       "action": "append",
-      "target": "医药",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "速冻调理肉制品",
-      "count": 4,
-      "samples": [
-        "惠发食品",
-        "惠发食品",
-        "惠发食品"
-      ],
-      "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "卫星通信终端",
-      "count": 4,
-      "samples": [
-        "盛洋科技",
-        "盛洋科技",
-        "盛洋科技"
-      ],
-      "action": "append",
-      "target": "卫星导航",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "高速铜缆",
-      "count": 4,
-      "samples": [
-        "盛洋科技",
-        "盛洋科技",
-        "盛洋科技"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "百草枯",
-      "count": 4,
-      "samples": [
-        "红太阳",
-        "红太阳",
-        "红太阳"
-      ],
-      "action": "append",
-      "target": "农药",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "农业无人机",
-      "count": 4,
-      "samples": [
-        "红太阳",
-        "红太阳",
-        "红太阳"
-      ],
-      "action": "append",
-      "target": "大农业",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "激光通信",
-      "count": 4,
-      "samples": [
-        "阳光照明",
-        "阳光照明",
-        "阳光照明"
-      ],
-      "action": "append",
-      "target": "商业航天",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "董事会换届",
-      "count": 4,
-      "samples": [
-        "皇台酒业",
-        "皇台酒业",
-        "皇台酒业"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "央企",
-      "count": 4,
-      "samples": [
-        "长江通信",
-        "中成股份",
-        "凯盛新能"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "上海",
-      "count": 4,
-      "samples": [
-        "锦江酒店",
-        "龙头股份",
-        "上海九百"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "AI设计",
-      "count": 4,
-      "samples": [
-        "郑中设计",
-        "华阳国际",
-        "郑中设计"
-      ],
-      "action": "append",
-      "target": "AI应用",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "建筑装饰",
-      "count": 4,
-      "samples": [
-        "德才股份",
-        "德才股份",
-        "金 螳 螂"
-      ],
-      "action": "append",
-      "target": "地产产业链",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "数据中心",
-      "count": 4,
-      "samples": [
-        "城地香江",
-        "晶雪节能",
-        "源杰科技"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "锂电池",
-      "count": 4,
-      "samples": [
-        "野马电池",
-        "时代万恒",
-        "常铝股份"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "福建",
-      "count": 4,
-      "samples": [
-        "福建水泥",
-        "青山纸业",
-        "三钢闽光"
-      ],
-      "action": "append",
-      "target": "海峡两岸",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "智算业务",
-      "count": 4,
-      "samples": [
-        "阳光股份",
-        "智微智能",
-        "智微智能"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "算力服务",
-      "count": 4,
-      "samples": [
-        "金刚光伏",
-        "侨银股份",
-        "香江控股"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "空气能热泵",
-      "count": 4,
-      "samples": [
-        "日出东方",
-        "日出东方",
-        "日出东方"
-      ],
-      "action": "append",
-      "target": "新能源",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "寒潮供暖",
-      "count": 4,
-      "samples": [
-        "东方环宇",
-        "东方环宇",
-        "东方环宇"
-      ],
-      "action": "append",
-      "target": "天然气",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "集中供热",
-      "count": 4,
-      "samples": [
-        "东方环宇",
-        "东方环宇",
-        "东方环宇"
-      ],
-      "action": "append",
-      "target": "新能源",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "商贸零售",
-      "count": 3,
-      "samples": [
-        "上海九百",
-        "上海九百",
-        "上海九百"
-      ],
-      "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "商业地产",
-      "count": 3,
-      "samples": [
-        "上海九百",
-        "上海九百",
-        "上海九百"
-      ],
-      "action": "append",
-      "target": "地产产业链",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "洗染服务",
-      "count": 3,
-      "samples": [
-        "上海九百",
-        "上海九百",
-        "上海九百"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "智慧交通",
-      "count": 3,
-      "samples": [
-        "多伦科技",
-        "金溢科技",
-        "多伦科技"
-      ],
-      "action": "append",
-      "target": "航运",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "数据库",
-      "count": 3,
-      "samples": [
-        "海量数据",
-        "太极股份",
-        "海量数据"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "磁性元器件",
-      "count": 3,
-      "samples": [
-        "科瑞思",
-        "科瑞思",
-        "科瑞思"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "羊毛羊绒",
-      "count": 3,
-      "samples": [
-        "九牧王",
-        "九牧王",
-        "九牧王"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "男裤",
-      "count": 3,
-      "samples": [
-        "九牧王",
-        "九牧王",
-        "九牧王"
-      ],
-      "action": "append",
-      "target": "大消费",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "太空裤",
-      "count": 3,
-      "samples": [
-        "九牧王",
-        "九牧王",
-        "九牧王"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "机器人电机",
-      "count": 3,
-      "samples": [
-        "东贝集团",
-        "东贝集团",
-        "东贝集团"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "制冷压缩机",
-      "count": 3,
-      "samples": [
-        "东贝集团",
-        "东贝集团",
-        "东贝集团"
-      ],
-      "action": "append",
-      "target": "物流",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "PCCP管道",
-      "count": 3,
-      "samples": [
-        "国统股份",
-        "国统股份",
-        "国统股份"
-      ],
-      "action": "append",
-      "target": "地产产业链",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "风电混塔",
-      "count": 3,
-      "samples": [
-        "国统股份",
-        "国统股份",
-        "国统股份"
-      ],
-      "action": "append",
-      "target": "新能源电池",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "央企控股",
-      "count": 3,
-      "samples": [
-        "国统股份",
-        "国统股份",
-        "国统股份"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "股权转让",
-      "count": 3,
-      "samples": [
-        "青岛食品",
-        "青岛食品",
-        "统一股份"
-      ],
-      "action": "event",
-      "target": "股权转让",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "产能扩张",
-      "count": 3,
-      "samples": [
-        "金安国纪",
-        "古麒绒材",
-        "剑桥科技"
-      ],
-      "action": "ignore",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "线性驱动",
-      "count": 3,
-      "samples": [
-        "凯迪股份",
-        "凯迪股份",
-        "凯迪股份"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "模拟芯片",
-      "count": 3,
-      "samples": [
-        "必易微",
-        "必易微",
-        "思瑞浦"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "卫星通信",
-      "count": 3,
-      "samples": [
-        "铖昌科技",
-        "高凌信息",
-        "通则康威"
-      ],
-      "action": "append",
-      "target": "卫星导航",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "MLCC设备",
-      "count": 3,
-      "samples": [
-        "博杰股份",
-        "博杰股份",
-        "博杰股份"
-      ],
-      "action": "append",
-      "target": "算力",
+      "target": "金融科技",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "太空算力",
-      "count": 3,
+      "count": 5,
       "samples": [
         "顺灏股份",
         "顺灏股份",
@@ -1562,528 +1003,47 @@
       "reason": ""
     },
     {
-      "tag": "中期分红",
-      "count": 3,
+      "tag": "三季报大增",
+      "count": 5,
       "samples": [
-        "巴比食品",
-        "古井贡酒",
-        "百隆东方"
+        "永安药业",
+        "中电港",
+        "合百集团"
+      ],
+      "action": "event",
+      "target": "三季报大增",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "超跌反弹",
+      "count": 5,
+      "samples": [
+        "华瓷股份",
+        "三峡新材",
+        "深南电路"
+      ],
+      "action": "event",
+      "target": "超跌反弹",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "液冷",
+      "count": 5,
+      "samples": [
+        "统一股份",
+        "龙蟠科技",
+        "飞亚达"
       ],
       "action": "ignore",
       "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "仿生机器人",
-      "count": 3,
-      "samples": [
-        "派斯林",
-        "汉王科技",
-        "汉王科技"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "有机涂层板",
-      "count": 3,
-      "samples": [
-        "扬子新材",
-        "扬子新材",
-        "扬子新材"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "高洁净板",
-      "count": 3,
-      "samples": [
-        "扬子新材",
-        "扬子新材",
-        "扬子新材"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "三季报净利增长",
-      "count": 3,
-      "samples": [
-        "首旅酒店",
-        "恒生电子",
-        "顶点软件"
-      ],
-      "action": "event",
-      "target": "",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "照明",
-      "count": 3,
-      "samples": [
-        "阳光照明",
-        "阳光照明",
-        "阳光照明"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "赛纬重组",
-      "count": 3,
-      "samples": [
-        "三峡新材",
-        "三峡新材",
-        "三峡新材"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "锂电电解液",
-      "count": 3,
-      "samples": [
-        "三峡新材",
-        "三峡新材",
-        "三峡新材"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "浮法玻璃",
-      "count": 3,
-      "samples": [
-        "三峡新材",
-        "三峡新材",
-        "三峡新材"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "广州",
-      "count": 3,
-      "samples": [
-        "广百股份",
-        "广百股份",
-        "广百股份"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "算力网络",
-      "count": 3,
-      "samples": [
-        "润建股份",
-        "润建股份",
-        "润建股份"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "词元出海",
-      "count": 3,
-      "samples": [
-        "润建股份",
-        "润建股份",
-        "润建股份"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "室内设计",
-      "count": 3,
-      "samples": [
-        "郑中设计",
-        "郑中设计",
-        "郑中设计"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "智能体",
-      "count": 3,
-      "samples": [
-        "德才股份",
-        "德才股份",
-        "德才股份"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "AI影视",
-      "count": 3,
-      "samples": [
-        "浙文影业",
-        "浙文影业",
-        "丝路视觉"
-      ],
-      "action": "append",
-      "target": "AI应用",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "宠物经济",
-      "count": 3,
-      "samples": [
-        "大千生态",
-        "大千生态",
-        "大千生态"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "定增完成",
-      "count": 3,
-      "samples": [
-        "大千生态",
-        "大千生态",
-        "大千生态"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "拟更名灵动股份",
-      "count": 3,
-      "samples": [
-        "大千生态",
-        "大千生态",
-        "大千生态"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "AI短剧",
-      "count": 3,
-      "samples": [
-        "华是科技",
-        "南威软件",
-        "南威软件"
-      ],
-      "action": "append",
-      "target": "AI应用",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "智能音箱",
-      "count": 3,
-      "samples": [
-        "国光电器",
-        "国光电器",
-        "国光电器"
-      ],
-      "action": "append",
-      "target": "AI终端",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "声学模组",
-      "count": 3,
-      "samples": [
-        "国光电器",
-        "国光电器",
-        "国光电器"
-      ],
-      "action": "append",
-      "target": "AI终端",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "铝塑膜",
-      "count": 3,
-      "samples": [
-        "紫竹高科",
-        "紫竹高科",
-        "紫竹高科"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "汽车检具",
-      "count": 3,
-      "samples": [
-        "紫竹高科",
-        "紫竹高科",
-        "紫竹高科"
-      ],
-      "action": "append",
-      "target": "汽车",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "启元气体收购",
-      "count": 3,
-      "samples": [
-        "新亚制程",
-        "新亚制程",
-        "新亚制程"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "AI服务器电源",
-      "count": 3,
-      "samples": [
-        "新亚制程",
-        "新亚制程",
-        "新亚制程"
-      ],
-      "action": "append",
-      "target": "电力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "低温光伏浆料",
-      "count": 3,
-      "samples": [
-        "贝特利",
-        "贝特利",
-        "贝特利"
-      ],
-      "action": "append",
-      "target": "光伏",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "柔性传感",
-      "count": 3,
-      "samples": [
-        "福莱新材",
-        "福莱新材",
-        "福莱新材"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "黄金珠宝",
-      "count": 3,
-      "samples": [
-        "深中华A",
-        "深中华A",
-        "宁波中百"
-      ],
-      "action": "append",
-      "target": "黄金",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "半导体靶材",
-      "count": 3,
-      "samples": [
-        "有研新材",
-        "江丰电子",
-        "有研新材"
-      ],
-      "action": "append",
-      "target": "半导体",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "先进存储",
-      "count": 3,
-      "samples": [
-        "有研新材",
-        "江丰电子",
-        "有研新材"
-      ],
-      "action": "append",
-      "target": "半导体",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "机器人控制器",
-      "count": 3,
-      "samples": [
-        "智微智能",
-        "智微智能",
-        "智微智能"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "智元供应链",
-      "count": 3,
-      "samples": [
-        "智微智能",
-        "智微智能",
-        "智微智能"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "电路板设备",
-      "count": 3,
-      "samples": [
-        "大族激光",
-        "赛腾股份",
-        "赛腾股份"
-      ],
-      "action": "append",
-      "target": "PCB",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "AI算力",
-      "count": 3,
-      "samples": [
-        "海星股份",
-        "华胜天成",
-        "法狮龙"
-      ],
-      "action": "append",
-      "target": "算力",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "印制电路板",
-      "count": 3,
-      "samples": [
-        "沪电股份",
-        "兴森科技",
-        "超声电子"
-      ],
-      "action": "append",
-      "target": "PCB",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "海洋养殖",
-      "count": 3,
-      "samples": [
-        "东方海洋",
-        "东方海洋",
-        "东方海洋"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "通信模组",
-      "count": 3,
-      "samples": [
-        "日海智能",
-        "日海智能",
-        "日海智能"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "划转",
-      "count": 3,
-      "samples": [
-        "日海智能",
-        "日海智能",
-        "日海智能"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "消费电子",
-      "count": 3,
-      "samples": [
-        "智动力",
-        "瀛通通讯",
-        "瀛通通讯"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "算力租赁",
-      "count": 3,
-      "samples": [
-        "华升股份",
-        "中青宝",
-        "华孚时尚"
-      ],
-      "action": "append",
-      "target": "算力",
       "accept": true,
       "reason": ""
     },
     {
       "tag": "冰雪经济",
-      "count": 3,
+      "count": 5,
       "samples": [
         "龙建股份",
         "晶雪节能",
@@ -2095,107 +1055,94 @@
       "reason": ""
     },
     {
-      "tag": "复牌",
-      "count": 3,
-      "samples": [
-        "亚玛顿",
-        "亚玛顿",
-        "亚玛顿"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "光伏设备",
-      "count": 3,
-      "samples": [
-        "金辰股份",
-        "金辰股份",
-        "金辰股份"
-      ],
-      "action": "append",
-      "target": "光伏",
-      "accept": true,
-      "reason": ""
-    },
-    {
-      "tag": "半导体装备",
-      "count": 3,
-      "samples": [
-        "金辰股份",
-        "金辰股份",
-        "金辰股份"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "玻璃基封装",
-      "count": 3,
-      "samples": [
-        "金辰股份",
-        "金辰股份",
-        "金辰股份"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "四足机器人",
-      "count": 3,
-      "samples": [
-        "北纬科技",
-        "北纬科技",
-        "北纬科技"
-      ],
-      "action": "append",
-      "target": "机器人",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "手机游戏",
-      "count": 3,
-      "samples": [
-        "北纬科技",
-        "北纬科技",
-        "北纬科技"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
-      "tag": "物联网",
-      "count": 3,
-      "samples": [
-        "北纬科技",
-        "北纬科技",
-        "北纬科技"
-      ],
-      "action": "new",
-      "target": "",
-      "accept": null,
-      "reason": ""
-    },
-    {
       "tag": "AI算力PCB",
-      "count": 3,
+      "count": 5,
       "samples": [
         "景旺电子",
         "深南电路",
         "超颖电子"
       ],
+      "action": "ignore",
+      "target": "",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "养殖机器人",
+      "count": 5,
+      "samples": [
+        "金新农",
+        "金新农",
+        "金新农"
+      ],
+      "action": "append",
+      "target": "机器人",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "水产养殖",
+      "count": 5,
+      "samples": [
+        "好当家",
+        "好当家",
+        "好当家"
+      ],
+      "action": "append",
+      "target": "大农业",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "液冷算力",
+      "count": 5,
+      "samples": [
+        "真视通",
+        "真视通",
+        "真视通"
+      ],
       "action": "append",
       "target": "算力",
-      "accept": null,
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "边缘AI算力",
+      "count": 5,
+      "samples": [
+        "全筑股份",
+        "全筑股份",
+        "全筑股份"
+      ],
+      "action": "append",
+      "target": "算力",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "智慧建筑",
+      "count": 5,
+      "samples": [
+        "全筑股份",
+        "全筑股份",
+        "全筑股份"
+      ],
+      "action": "append",
+      "target": "地产产业链",
+      "accept": true,
+      "reason": ""
+    },
+    {
+      "tag": "高阶HDI",
+      "count": 5,
+      "samples": [
+        "中京电子",
+        "中京电子",
+        "中京电子"
+      ],
+      "action": "append",
+      "target": "PCB",
+      "accept": true,
       "reason": ""
     }
   ]

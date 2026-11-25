@@ -23,6 +23,16 @@
       "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
     },
     {
+      "name": "消费电子",
+      "type": "sector",
+      "reason": "消费电子板块当日涨停"
+    },
+    {
+      "name": "专用设备",
+      "type": "sector",
+      "reason": "专用设备板块当日涨停"
+    },
+    {
       "name": "医药",
       "type": "sector",
       "reason": "创新药出海与基药目录调整，CRO订单回暖"
@@ -36,6 +46,11 @@
       "name": "光伏",
       "type": "sector",
       "reason": "光伏板块当日涨停"
+    },
+    {
+      "name": "通信设备",
+      "type": "sector",
+      "reason": "通信设备板块当日涨停"
     },
     {
       "name": "生肖炒作",
@@ -76,9 +91,9 @@
       "seal_time": "14:37:58",
       "seal_amount": 5207517,
       "theme": "其他概念",
-      "reason": "百货零售+医疗服务+股份注销",
+      "reason": "百货+医疗服务+股份注销",
       "tags": [
-        "百货零售",
+        "百货",
         "医疗服务",
         "股份注销"
       ],
@@ -91,11 +106,10 @@
       "seal_time": "10:12:37",
       "seal_amount": 19532570,
       "theme": "其他概念",
-      "reason": "冰雪旅游保障+高速公路运营+黑龙江",
+      "reason": "冰雪旅游保障+高速公路运营",
       "tags": [
         "冰雪旅游保障",
-        "高速公路运营",
-        "黑龙江"
+        "高速公路运营"
       ],
       "is_delisting": false
     },
@@ -121,9 +135,9 @@
       "seal_time": "09:25:00",
       "seal_amount": 46752912,
       "theme": "其他概念",
-      "reason": "液冷算力+华为算力+多媒体视讯",
+      "reason": "算力+华为算力+多媒体视讯",
       "tags": [
-        "液冷算力",
+        "算力",
         "华为算力",
         "多媒体视讯"
       ],
@@ -301,11 +315,10 @@
       "seal_time": "09:30:00",
       "seal_amount": 136511602,
       "theme": "其他概念",
-      "reason": "存储设备集采+算力服务+国企",
+      "reason": "存储设备集采+算力服务",
       "tags": [
         "存储设备集采",
-        "算力服务",
-        "国企"
+        "算力服务"
       ],
       "is_delisting": false
     },
@@ -375,11 +388,10 @@
       "seal_time": "13:19:32",
       "seal_amount": 35972638,
       "theme": "文化传媒",
-      "reason": "AI漫剧+出版发行+黑龙江",
+      "reason": "AI漫剧+出版发行",
       "tags": [
         "AI漫剧",
-        "出版发行",
-        "黑龙江"
+        "出版发行"
       ],
       "is_delisting": false
     },
@@ -390,10 +402,10 @@
       "seal_time": "13:59:18",
       "seal_amount": 56248553,
       "theme": "机器人",
-      "reason": "冰雪工程+数据中心液冷+船舶制冷+股权受让",
+      "reason": "冰雪工程+数据中心+船舶制冷+股权受让",
       "tags": [
         "冰雪工程",
-        "数据中心液冷",
+        "数据中心",
         "船舶制冷",
         "股权受让"
       ],
@@ -573,7 +585,7 @@
       "board_count": 1,
       "seal_time": "09:42:21",
       "seal_amount": 108245520,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "机器人结构件+消费电子结构件+苹果供应链+固态电池",
       "tags": [
         "机器人结构件",
@@ -590,11 +602,11 @@
       "seal_time": "09:43:23",
       "seal_amount": 76658760,
       "theme": "其他概念",
-      "reason": "影视业务+微短剧+国企改革",
+      "reason": "影视业务+微短剧+改革",
       "tags": [
         "影视业务",
         "微短剧",
-        "国企改革"
+        "改革"
       ],
       "is_delisting": false
     },
@@ -814,7 +826,7 @@
       "board_count": 1,
       "seal_time": "10:02:48",
       "seal_amount": 18211238,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "具身智能数据+人形机器人+智能装备",
       "tags": [
         "具身智能数据",
@@ -844,7 +856,7 @@
       "board_count": 1,
       "seal_time": "10:14:42",
       "seal_amount": 10770834,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "AI眼镜+智能音箱+声学模组",
       "tags": [
         "AI眼镜",
@@ -860,11 +872,10 @@
       "seal_time": "10:40:30",
       "seal_amount": 45850830,
       "theme": "生肖炒作",
-      "reason": "MOFs材料+茂金属聚烯烃+国企+“羊”字辈",
+      "reason": "MOFs材料+茂金属聚烯烃+“羊”字辈",
       "tags": [
         "MOFs材料",
         "茂金属聚烯烃",
-        "国企",
         "“羊”字辈"
       ],
       "is_delisting": false
@@ -1041,7 +1052,7 @@
       "board_count": 1,
       "seal_time": "11:09:36",
       "seal_amount": 69759454,
-      "theme": "其他概念",
+      "theme": "消费电子",
       "reason": "消费电子+声学元器件+拟参投硅臻芯片+股东增持",
       "tags": [
         "消费电子",
@@ -1103,11 +1114,10 @@
       "seal_time": "11:19:21",
       "seal_amount": 122574579,
       "theme": "其他概念",
-      "reason": "光模块+竹浆纸+福建",
+      "reason": "光模块+竹浆纸",
       "tags": [
         "光模块",
-        "竹浆纸",
-        "福建"
+        "竹浆纸"
       ],
       "is_delisting": false
     },
@@ -1193,7 +1203,7 @@
       "board_count": 1,
       "seal_time": "13:04:22",
       "seal_amount": 17219301,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "矿冶机器人+磁性材料",
       "tags": [
         "矿冶机器人",
@@ -1253,11 +1263,10 @@
       "seal_time": "13:11:18",
       "seal_amount": 59113794,
       "theme": "其他概念",
-      "reason": "商贸零售+商业地产+上海",
+      "reason": "商贸+商业地产",
       "tags": [
-        "商贸零售",
-        "商业地产",
-        "上海"
+        "商贸",
+        "商业地产"
       ],
       "is_delisting": false
     },
@@ -1267,7 +1276,7 @@
       "board_count": 1,
       "seal_time": "13:11:39",
       "seal_amount": 28715082,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "黄金+境外金矿收购+矿山装备",
       "tags": [
         "黄金",
@@ -1313,7 +1322,7 @@
       "board_count": 1,
       "seal_time": "13:17:21",
       "seal_amount": 70728125,
-      "theme": "其他概念",
+      "theme": "通信设备",
       "reason": "机器人+端侧AI+物联网模组",
       "tags": [
         "机器人",
@@ -1374,12 +1383,12 @@
       "seal_time": "13:19:33",
       "seal_amount": 36101088,
       "theme": "其他概念",
-      "reason": "AI玩具+IP文创+祈福文创+国企改革",
+      "reason": "AI玩具+IP文创+祈福文创+改革",
       "tags": [
         "AI玩具",
         "IP文创",
         "祈福文创",
-        "国企改革"
+        "改革"
       ],
       "is_delisting": false
     },
@@ -1420,9 +1429,9 @@
       "seal_time": "13:20:13",
       "seal_amount": 26061990,
       "theme": "其他概念",
-      "reason": "百货零售+间接持股中科宇航+杭州",
+      "reason": "百货+间接持股中科宇航+杭州",
       "tags": [
-        "百货零售",
+        "百货",
         "间接持股中科宇航",
         "杭州"
       ],
@@ -1480,10 +1489,10 @@
       "seal_time": "13:22:24",
       "seal_amount": 3348840,
       "theme": "其他概念",
-      "reason": "人形机器人+数据中心液冷+换热器",
+      "reason": "人形机器人+数据中心+换热器",
       "tags": [
         "人形机器人",
-        "数据中心液冷",
+        "数据中心",
         "换热器"
       ],
       "is_delisting": false
@@ -1646,11 +1655,11 @@
       "seal_time": "13:28:36",
       "seal_amount": 6250233,
       "theme": "其他概念",
-      "reason": "电路板设计+智能控制+液冷储能+三季报增长",
+      "reason": "电路板设计+智能控制+储能+三季报增长",
       "tags": [
         "电路板设计",
         "智能控制",
-        "液冷储能",
+        "储能",
         "三季报增长"
       ],
       "is_delisting": false
@@ -1676,7 +1685,7 @@
       "board_count": 1,
       "seal_time": "13:37:20",
       "seal_amount": 32751312,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "人形机器人+智能包装+三季报增长",
       "tags": [
         "人形机器人",
@@ -1780,7 +1789,7 @@
       "board_count": 1,
       "seal_time": "13:42:03",
       "seal_amount": 8753791,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "3D打印+铝挤压模具",
       "tags": [
         "3D打印",
@@ -1854,7 +1863,7 @@
       "board_count": 1,
       "seal_time": "13:44:20",
       "seal_amount": 14758260,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "人形机器人+缝制机械+机器人测试",
       "tags": [
         "人形机器人",
@@ -1953,21 +1962,6 @@
       "is_delisting": false
     },
     {
-      "code": "603048",
-      "name": "浙江黎明",
-      "board_count": 1,
-      "seal_time": "13:45:12",
-      "seal_amount": 2349864,
-      "theme": "汽车",
-      "reason": "关注机器人行业+汽车零部件+股权转让",
-      "tags": [
-        "关注机器人行业",
-        "汽车零部件",
-        "股权转让"
-      ],
-      "is_delisting": false
-    },
-    {
       "code": "301052",
       "name": "果麦文化",
       "board_count": 1,
@@ -1979,6 +1973,21 @@
         "AI短剧",
         "AI视频",
         "图书出版"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603048",
+      "name": "浙江黎明",
+      "board_count": 1,
+      "seal_time": "13:45:12",
+      "seal_amount": 2349864,
+      "theme": "汽车",
+      "reason": "关注机器人行业+汽车零部件+股权转让",
+      "tags": [
+        "关注机器人行业",
+        "汽车零部件",
+        "股权转让"
       ],
       "is_delisting": false
     },
@@ -2064,9 +2073,8 @@
       "seal_time": "13:48:45",
       "seal_amount": 12915672,
       "theme": "其他概念",
-      "reason": "AI算力PCB+存储PCB+高阶PCB认证",
+      "reason": "存储PCB+高阶PCB认证",
       "tags": [
-        "AI算力PCB",
         "存储PCB",
         "高阶PCB认证"
       ],
@@ -2123,7 +2131,7 @@
       "board_count": 1,
       "seal_time": "14:00:06",
       "seal_amount": 4699485,
-      "theme": "机器人",
+      "theme": "专用设备",
       "reason": "人形机器人+具身智能+海尔定增",
       "tags": [
         "人形机器人",

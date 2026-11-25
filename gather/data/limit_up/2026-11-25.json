@@ -1,0 +1,809 @@
+{
+  "schema_version": "1.0",
+  "trade_date": "2026-11-25",
+  "themes": [
+    {
+      "name": "汽车",
+      "type": "sector",
+      "reason": "整车智能化带动零部件订单，出口与新车周期共振"
+    },
+    {
+      "name": "机器人",
+      "type": "sector",
+      "reason": "特斯拉Optimus量产预期升温，人形机器人核心零部件订单落地"
+    },
+    {
+      "name": "文化传媒",
+      "type": "sector",
+      "reason": "AI短剧与微短剧密集落地，影视院线内容供给回暖"
+    },
+    {
+      "name": "电子化学品",
+      "type": "sector",
+      "reason": "电子化学品国产替代加速，化工品价格企稳回升"
+    },
+    {
+      "name": "消费电子",
+      "type": "sector",
+      "reason": "消费电子板块当日涨停"
+    },
+    {
+      "name": "电力",
+      "type": "sector",
+      "reason": "迎峰度夏用电负荷创新高，电网投资加速"
+    },
+    {
+      "name": "医药",
+      "type": "sector",
+      "reason": "创新药出海与基药目录调整，CRO订单回暖"
+    },
+    {
+      "name": "大消费",
+      "type": "sector",
+      "reason": "消费刺激政策落地，可选消费需求边际修复"
+    },
+    {
+      "name": "生肖炒作",
+      "type": "sentiment",
+      "reason": "岁末生肖与谐音标的资金抱团，短线情绪驱动"
+    },
+    {
+      "name": "其他概念",
+      "type": "other",
+      "reason": "题材分散，无明确主线"
+    }
+  ],
+  "stocks": [
+    {
+      "code": "002548",
+      "name": "金新农",
+      "board_count": 6,
+      "seal_time": "09:25:00",
+      "seal_amount": 101571432,
+      "theme": "其他概念",
+      "reason": "生猪养殖+猪饲料+生猪现货涨价",
+      "tags": [
+        "生猪养殖",
+        "猪饲料",
+        "生猪现货涨价"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600467",
+      "name": "好当家",
+      "board_count": 6,
+      "seal_time": "09:31:33",
+      "seal_amount": 100549663,
+      "theme": "其他概念",
+      "reason": "海参+水产养殖+预制菜",
+      "tags": [
+        "海参",
+        "水产养殖",
+        "预制菜"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603324",
+      "name": "盛剑科技",
+      "board_count": 6,
+      "seal_time": "09:59:06",
+      "seal_amount": 18625534,
+      "theme": "其他概念",
+      "reason": "光刻胶配套+电子化学品+半导体附属装备",
+      "tags": [
+        "光刻胶配套",
+        "电子化学品",
+        "半导体附属装备"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603030",
+      "name": "全筑股份",
+      "board_count": 5,
+      "seal_time": "09:25:02",
+      "seal_amount": 66334455,
+      "theme": "其他概念",
+      "reason": "先进光源+边缘AI算力+智慧建筑",
+      "tags": [
+        "先进光源",
+        "边缘AI算力",
+        "智慧建筑"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "board_count": 5,
+      "seal_time": "09:45:21",
+      "seal_amount": 274275506,
+      "theme": "生肖炒作",
+      "reason": "机器人投资+厨房小家电+“羊”字辈",
+      "tags": [
+        "机器人投资",
+        "厨房小家电",
+        "“羊”字辈"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "board_count": 5,
+      "seal_time": "14:54:48",
+      "seal_amount": 107285381,
+      "theme": "其他概念",
+      "reason": "高阶HDI+算力+光模块PCB+人形机器人",
+      "tags": [
+        "高阶HDI",
+        "算力",
+        "光模块PCB",
+        "人形机器人"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603960",
+      "name": "克来机电",
+      "board_count": 4,
+      "seal_time": "09:25:01",
+      "seal_amount": 305550086,
+      "theme": "汽车",
+      "reason": "工业机器人+柔性自动化装备+汽车零部件",
+      "tags": [
+        "工业机器人",
+        "柔性自动化装备",
+        "汽车零部件"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002122",
+      "name": "汇洲智能",
+      "board_count": 3,
+      "seal_time": "09:25:00",
+      "seal_amount": 70220159,
+      "theme": "机器人",
+      "reason": "撤销风险警示+物理AI+数据服务",
+      "tags": [
+        "撤销风险警示",
+        "物理AI",
+        "数据服务"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600814",
+      "name": "杭州解百",
+      "board_count": 3,
+      "seal_time": "09:30:03",
+      "seal_amount": 245554612,
+      "theme": "其他概念",
+      "reason": "百货+杭州",
+      "tags": [
+        "百货",
+        "杭州"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002164",
+      "name": "宁波东力",
+      "board_count": 3,
+      "seal_time": "09:30:09",
+      "seal_amount": 128958760,
+      "theme": "机器人",
+      "reason": "人形机器人+精密减速器+尼得科合作",
+      "tags": [
+        "人形机器人",
+        "精密减速器",
+        "尼得科合作"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000593",
+      "name": "德龙汇能",
+      "board_count": 3,
+      "seal_time": "09:30:18",
+      "seal_amount": 148862314,
+      "theme": "其他概念",
+      "reason": "天然气+参股半导体+氢能",
+      "tags": [
+        "天然气",
+        "参股半导体",
+        "氢能"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603926",
+      "name": "铁流股份",
+      "board_count": 3,
+      "seal_time": "09:35:44",
+      "seal_amount": 2846448,
+      "theme": "汽车",
+      "reason": "机器人零部件+电机轴+三季报净利增长",
+      "tags": [
+        "机器人零部件",
+        "电机轴",
+        "三季报净利增长"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002642",
+      "name": "荣联科技",
+      "board_count": 3,
+      "seal_time": "10:08:12",
+      "seal_amount": 1807918,
+      "theme": "其他概念",
+      "reason": "存储设备集采+算力服务",
+      "tags": [
+        "存储设备集采",
+        "算力服务"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "300703",
+      "name": "创源股份",
+      "board_count": 3,
+      "seal_time": "10:15:03",
+      "seal_amount": 67635995,
+      "theme": "其他概念",
+      "reason": "祈福文创+IP文创+AI玩具+改革",
+      "tags": [
+        "祈福文创",
+        "IP文创",
+        "AI玩具",
+        "改革"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605577",
+      "name": "龙版传媒",
+      "board_count": 3,
+      "seal_time": "14:23:21",
+      "seal_amount": 66866149,
+      "theme": "文化传媒",
+      "reason": "AI漫剧+出版发行",
+      "tags": [
+        "AI漫剧",
+        "出版发行"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002872",
+      "name": "天圣制药",
+      "board_count": 2,
+      "seal_time": "09:25:00",
+      "seal_amount": 90157930,
+      "theme": "其他概念",
+      "reason": "撤销风险警示+医药制造+中成药",
+      "tags": [
+        "撤销风险警示",
+        "医药制造",
+        "中成药"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "board_count": 2,
+      "seal_time": "09:30:00",
+      "seal_amount": 27826170,
+      "theme": "其他概念",
+      "reason": "航空军工+机器人概念+粉磨装备",
+      "tags": [
+        "航空军工",
+        "机器人概念",
+        "粉磨装备"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "board_count": 2,
+      "seal_time": "09:55:20",
+      "seal_amount": 73235232,
+      "theme": "其他概念",
+      "reason": "光模块+竹浆纸",
+      "tags": [
+        "光模块",
+        "竹浆纸"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "board_count": 2,
+      "seal_time": "13:36:26",
+      "seal_amount": 55949791,
+      "theme": "电子化学品",
+      "reason": "甲醇+风电项目",
+      "tags": [
+        "甲醇",
+        "风电项目"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603360",
+      "name": "百傲化学",
+      "board_count": 2,
+      "seal_time": "14:50:16",
+      "seal_amount": 3010656,
+      "theme": "其他概念",
+      "reason": "半导体设备+工业杀菌剂",
+      "tags": [
+        "半导体设备",
+        "工业杀菌剂"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002145",
+      "name": "钛能化学",
+      "board_count": 1,
+      "seal_time": "09:30:03",
+      "seal_amount": 38403420,
+      "theme": "电子化学品",
+      "reason": "钛白粉+磷酸铁",
+      "tags": [
+        "钛白粉",
+        "磷酸铁"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000702",
+      "name": "正虹科技",
+      "board_count": 1,
+      "seal_time": "09:30:21",
+      "seal_amount": 18488909,
+      "theme": "其他概念",
+      "reason": "饲料主业+养殖业",
+      "tags": [
+        "饲料主业",
+        "养殖业"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002728",
+      "name": "特一药业",
+      "board_count": 1,
+      "seal_time": "09:31:33",
+      "seal_amount": 73859991,
+      "theme": "其他概念",
+      "reason": "流感+止咳宝片",
+      "tags": [
+        "流感",
+        "止咳宝片"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "605136",
+      "name": "丽人丽妆",
+      "board_count": 1,
+      "seal_time": "09:32:20",
+      "seal_amount": 54102200,
+      "theme": "其他概念",
+      "reason": "AI应用+化妆品电商",
+      "tags": [
+        "AI应用",
+        "化妆品电商"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000908",
+      "name": "石药景峰",
+      "board_count": 1,
+      "seal_time": "09:32:51",
+      "seal_amount": 18928312,
+      "theme": "其他概念",
+      "reason": "中药创新药+石药入主+三季报扭亏",
+      "tags": [
+        "中药创新药",
+        "石药入主",
+        "三季报扭亏"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301211",
+      "name": "亨迪药业",
+      "board_count": 1,
+      "seal_time": "09:33:24",
+      "seal_amount": 45928773,
+      "theme": "其他概念",
+      "reason": "流感+布洛芬+三季报增长",
+      "tags": [
+        "流感",
+        "布洛芬",
+        "三季报增长"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "board_count": 1,
+      "seal_time": "09:33:24",
+      "seal_amount": 18810066,
+      "theme": "其他概念",
+      "reason": "尿素+甲醇+煤化工",
+      "tags": [
+        "尿素",
+        "甲醇",
+        "煤化工"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600223",
+      "name": "福瑞达",
+      "board_count": 1,
+      "seal_time": "09:34:08",
+      "seal_amount": 16309648,
+      "theme": "其他概念",
+      "reason": "重组胶原蛋白+合成生物+山东",
+      "tags": [
+        "重组胶原蛋白",
+        "合成生物",
+        "山东"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603069",
+      "name": "海汽集团",
+      "board_count": 1,
+      "seal_time": "09:35:24",
+      "seal_amount": 51215703,
+      "theme": "其他概念",
+      "reason": "免税重组+海南+道路客运",
+      "tags": [
+        "免税重组",
+        "海南",
+        "道路客运"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002861",
+      "name": "瀛通通讯",
+      "board_count": 1,
+      "seal_time": "09:36:03",
+      "seal_amount": 14940153,
+      "theme": "消费电子",
+      "reason": "AI眼镜+智能声学+消费电子",
+      "tags": [
+        "AI眼镜",
+        "智能声学",
+        "消费电子"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "board_count": 1,
+      "seal_time": "09:37:12",
+      "seal_amount": 13288033,
+      "theme": "电力",
+      "reason": "重大资产重组+清洁能源+高管增持",
+      "tags": [
+        "重大资产重组",
+        "清洁能源",
+        "高管增持"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002900",
+      "name": "哈三联",
+      "board_count": 1,
+      "seal_time": "09:38:33",
+      "seal_amount": 24443936,
+      "theme": "其他概念",
+      "reason": "创新药+化学制药+三季报减亏",
+      "tags": [
+        "创新药",
+        "化学制药",
+        "三季报减亏"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002864",
+      "name": "盘龙药业",
+      "board_count": 1,
+      "seal_time": "09:38:57",
+      "seal_amount": 18224767,
+      "theme": "其他概念",
+      "reason": "中药创新药+盘龙七片",
+      "tags": [
+        "中药创新药",
+        "盘龙七片"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301089",
+      "name": "拓新药业",
+      "board_count": 1,
+      "seal_time": "09:39:06",
+      "seal_amount": 31400422,
+      "theme": "其他概念",
+      "reason": "流感+核苷原料药",
+      "tags": [
+        "流感",
+        "核苷原料药"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002038",
+      "name": "双鹭药业",
+      "board_count": 1,
+      "seal_time": "09:40:15",
+      "seal_amount": 5090120,
+      "theme": "其他概念",
+      "reason": "创新药+GLP-1",
+      "tags": [
+        "创新药",
+        "GLP-1"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600280",
+      "name": "中央商场",
+      "board_count": 1,
+      "seal_time": "09:40:38",
+      "seal_amount": 51417342,
+      "theme": "其他概念",
+      "reason": "百货+罗森便利+破产剥离",
+      "tags": [
+        "百货",
+        "罗森便利",
+        "破产剥离"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "board_count": 1,
+      "seal_time": "09:40:51",
+      "seal_amount": 25953960,
+      "theme": "其他概念",
+      "reason": "流感+中成药",
+      "tags": [
+        "流感",
+        "中成药"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002197",
+      "name": "证通电子",
+      "board_count": 1,
+      "seal_time": "09:58:00",
+      "seal_amount": 68735301,
+      "theme": "其他概念",
+      "reason": "算力租赁+数据中心",
+      "tags": [
+        "算力租赁",
+        "数据中心"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "300086",
+      "name": "康芝药业",
+      "board_count": 1,
+      "seal_time": "09:59:36",
+      "seal_amount": 3933835,
+      "theme": "其他概念",
+      "reason": "印尼血竭进口+中药材贸易+儿童药",
+      "tags": [
+        "印尼血竭进口",
+        "中药材贸易",
+        "儿童药"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603887",
+      "name": "城地香江",
+      "board_count": 1,
+      "seal_time": "10:03:47",
+      "seal_amount": 70259505,
+      "theme": "其他概念",
+      "reason": "东数西算+数据中心EPC",
+      "tags": [
+        "东数西算",
+        "数据中心EPC"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603708",
+      "name": "家家悦",
+      "board_count": 1,
+      "seal_time": "10:04:50",
+      "seal_amount": 38628717,
+      "theme": "其他概念",
+      "reason": "连锁超市经营+生鲜食品+AI应用",
+      "tags": [
+        "连锁超市经营",
+        "生鲜食品",
+        "AI应用"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "601086",
+      "name": "国芳集团",
+      "board_count": 1,
+      "seal_time": "10:06:01",
+      "seal_amount": 76065925,
+      "theme": "其他概念",
+      "reason": "三季报增长",
+      "tags": [
+        "三季报增长"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "301066",
+      "name": "万事利",
+      "board_count": 1,
+      "seal_time": "10:07:09",
+      "seal_amount": 14329862,
+      "theme": "其他概念",
+      "reason": "丝绸文创+AIGC+完毕",
+      "tags": [
+        "丝绸文创",
+        "AIGC",
+        "完毕"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600829",
+      "name": "人民同泰",
+      "board_count": 1,
+      "seal_time": "10:10:08",
+      "seal_amount": 4572550,
+      "theme": "其他概念",
+      "reason": "医药商业+流感+超跌反弹",
+      "tags": [
+        "医药商业",
+        "流感",
+        "超跌反弹"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002069",
+      "name": "獐子岛",
+      "board_count": 1,
+      "seal_time": "10:14:48",
+      "seal_amount": 7973195,
+      "theme": "其他概念",
+      "reason": "水产养殖+海洋牧场+改革",
+      "tags": [
+        "水产养殖",
+        "海洋牧场",
+        "改革"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "000756",
+      "name": "新华制药",
+      "board_count": 1,
+      "seal_time": "10:20:54",
+      "seal_amount": 35156992,
+      "theme": "其他概念",
+      "reason": "流感+阿尔茨海默病+解热镇痛",
+      "tags": [
+        "流感",
+        "阿尔茨海默病",
+        "解热镇痛"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "603122",
+      "name": "合富中国",
+      "board_count": 1,
+      "seal_time": "10:36:54",
+      "seal_amount": 4105621,
+      "theme": "医药",
+      "reason": "医药商业+两岸医疗+AI医疗",
+      "tags": [
+        "医药商业",
+        "两岸医疗",
+        "AI医疗"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002820",
+      "name": "桂发祥",
+      "board_count": 1,
+      "seal_time": "10:41:48",
+      "seal_amount": 37790602,
+      "theme": "大消费",
+      "reason": "休闲食品+非遗麻花+改革",
+      "tags": [
+        "休闲食品",
+        "非遗麻花",
+        "改革"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "002144",
+      "name": "宏达高科",
+      "board_count": 1,
+      "seal_time": "11:02:33",
+      "seal_amount": 33314520,
+      "theme": "其他概念",
+      "reason": "汽车内饰+按摩机器人+超声诊断+碳纤维",
+      "tags": [
+        "汽车内饰",
+        "按摩机器人",
+        "超声诊断",
+        "碳纤维"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600088",
+      "name": "中视传媒",
+      "board_count": 1,
+      "seal_time": "11:24:01",
+      "seal_amount": 33951444,
+      "theme": "文化传媒",
+      "reason": "短剧+AI应用+传媒",
+      "tags": [
+        "短剧",
+        "AI应用",
+        "传媒"
+      ],
+      "is_delisting": false
+    },
+    {
+      "code": "600229",
+      "name": "城市传媒",
+      "board_count": 1,
+      "seal_time": "13:01:33",
+      "seal_amount": 5960197,
+      "theme": "文化传媒",
+      "reason": "AIGC+IP运营+数字文化体验+青岛",
+      "tags": [
+        "AIGC",
+        "IP运营",
+        "数字文化体验",
+        "青岛"
+      ],
+      "is_delisting": false
+    }
+  ]
+}
