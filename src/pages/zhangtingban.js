@@ -9,6 +9,7 @@ import { footerHTML } from '../components/footer.js';
 import { statCardsHTML } from '../components/stat-cards.js';
 import { poolTableHTML } from '../components/pool-table.js';
 import { breadcrumbHTML } from '../../core/breadcrumb/breadcrumb.js';
+import { bindDateChange } from '../lib/date-picker.js';
 
 async function pageContentHTML(date) {
   return loadRenderedContent(`zhangtingban/${date}/index.html`, '.page');
@@ -135,14 +136,12 @@ export default {
     mountHeader(el);
     const input = el.querySelector('#date-select');
     if (input) {
-      input.addEventListener('change', (e) => {
-        const date = e.target.value;
-        if (!date) return;
-        const latestDate = data.allDates[data.allDates.length - 1];
-        const target = date === latestDate
-          ? `${ctx.env.basePath}zhangtingban/`
-          : `${ctx.env.basePath}zhangtingban/${date}/`;
-        ctx.router?.navigate(target);
+      bindDateChange(input, {
+        validDates: data.allDates,
+        current: data.target,
+        basePath: ctx.env.basePath,
+        kind: 'zhangtingban',
+        router: ctx.router
       });
     }
   }

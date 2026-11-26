@@ -7,6 +7,7 @@ import { headerHTML, mountHeader } from '../components/header.js';
 import { footerHTML } from '../components/footer.js';
 import { dragonTigerTableHTML } from '../components/dragon-tiger-table.js';
 import { breadcrumbHTML } from '../../core/breadcrumb/breadcrumb.js';
+import { bindDateChange } from '../lib/date-picker.js';
 
 async function pageContentHTML(date) {
   return loadRenderedContent(`dragonhu/${date}/index.html`, '.page');
@@ -124,13 +125,12 @@ export default {
     mountHeader(el);
     const input = el.querySelector('#date-select');
     if (input) {
-      input.addEventListener('change', (e) => {
-        const date = e.target.value;
-        if (!date) return;
-        const target = date === data.calendar?.latest
-          ? `${ctx.env.basePath}dragonhu/`
-          : `${ctx.env.basePath}dragonhu/${date}/`;
-        ctx.router?.navigate(target);
+      bindDateChange(input, {
+        validDates: data.dragonTigerDates,
+        current: data.target,
+        basePath: ctx.env.basePath,
+        kind: 'dragonhu',
+        router: ctx.router
       });
     }
   }

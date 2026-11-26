@@ -70,10 +70,10 @@ const siteBaseUrl = (
 ).replace(/\/$/, '');
 const dataDir = envManager.get('VITE_DATA_DIR');
 const tz = envManager.get('VITE_TZ');
-const homeLadderDays = Number(envManager.get('VITE_HOME_LADDER_DAYS')) || 7;
-const pageLadderDays = Number(envManager.get('VITE_PAGE_LADDER_DAYS')) || 10;
-const mobileLadderDays = Number(envManager.get('VITE_MOBILE_LADDER_DAYS')) || 3;
-const last10Days = Number(envManager.get('VITE_LAST10_DAYS')) || 10;
+const homeLadderDays = Number(envManager.get('VITE_HOME_LADDER_DAYS'));
+const pageLadderDays = Number(envManager.get('VITE_PAGE_LADDER_DAYS'));
+const mobileLadderDays = Number(envManager.get('VITE_MOBILE_LADDER_DAYS'));
+const last10Days = Number(envManager.get('VITE_LAST10_DAYS'));
 const enableDragonTiger = String(envManager.get('VITE_ENABLE_DRAGON_TIGER')) === 'true';
 const basePathWithSlash = basePath === '/' ? '/' : `${basePath.replace(/\/$/, '')}/`;
 

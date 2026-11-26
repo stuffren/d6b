@@ -1,5 +1,4 @@
 {
-  "siteName": "d6b",
   "footer": "© 2026 Vanilla JS Development - All rights reserved",
   "categories": [
     { "id": "zhangtingban", "label": "涨停板", "path": "/zhangtingban/", "type": "data", "order": 1 },

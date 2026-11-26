@@ -140,9 +140,10 @@ class EnvManager {
       this._env[key] = value;
     }
 
-    // 5. 应用 schema 默认值
+    // 5. 应用 schema 默认值（空字符串视同缺失，与 validate() 的必填判断口径一致）
     for (const [key, rule] of Object.entries(this.schema)) {
-      if (this._env[key] === undefined && rule.default !== undefined) {
+      const current = this._env[key];
+      if ((current === undefined || current === '') && rule.default !== undefined) {
         this._env[key] = rule.default;
       }
     }

@@ -1,4 +1,4 @@
-const RAW_BASE = __BASE_PATH__ || '/';
+const RAW_BASE = __BASE_PATH__;
 const BASE_NO_SLASH = RAW_BASE.replace(/\/$/, '') || '/';
 const BASE_WITH_SLASH = BASE_NO_SLASH === '/' ? '/' : `${BASE_NO_SLASH}/`;
 
@@ -7,15 +7,15 @@ const IS_DEV = Boolean(import.meta.env && import.meta.env.DEV);
 export const env = {
   siteName: __SITE_NAME__,
   isDev: IS_DEV,
-  siteBaseUrl: (__SITE_BASE_URL__ || '').replace(/\/$/, ''),
+  siteBaseUrl: __SITE_BASE_URL__.replace(/\/$/, ''),
   basePath: BASE_WITH_SLASH,
   basePathWithSlash: BASE_WITH_SLASH,
-  dataDir: (__DATA_DIR__ || '/data').replace(/^\//, '').replace(/\/$/, ''),
-  tz: __TZ__ || 'Asia/Shanghai',
-  homeLadderDays: Number(__HOME_LADDER_DAYS__) || 7,
-  pageLadderDays: Number(__PAGE_LADDER_DAYS__) || 10,
-  last10Days: Number(__LAST10_DAYS__) || 10,
-  mobileLadderDays: Number(__MOBILE_LADDER_DAYS__) || 3,
+  dataDir: __DATA_DIR__.replace(/^\//, '').replace(/\/$/, ''),
+  tz: __TZ__,
+  homeLadderDays: Number(__HOME_LADDER_DAYS__),
+  pageLadderDays: Number(__PAGE_LADDER_DAYS__),
+  last10Days: Number(__LAST10_DAYS__),
+  mobileLadderDays: Number(__MOBILE_LADDER_DAYS__),
   enableDragonTiger: String(__ENABLE_DRAGON_TIGER__) === 'true'
 };
 
