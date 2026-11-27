@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-27T11:42:46",
+  "latest_date": "2026-11-26",
+  "days": [
+    {
+      "date": "2026-10-26",
+      "limit_up_count": 55,
+      "max_board": 8,
+      "lianban_count": 18,
+      "delisting_count": 0,
+      "promotion_rate": null,
+      "theme_count": 5,
+      "other_count": 32
+    },
+    {
+      "date": "2026-10-27",
+      "limit_up_count": 41,
+      "max_board": 7,
+      "lianban_count": 17,
+      "delisting_count": 0,
+      "promotion_rate": 30.9,
+      "theme_count": 8,
+      "other_count": 22
+    },
+    {
+      "date": "2026-10-28",
+      "limit_up_count": 70,
+      "max_board": 9,
+      "lianban_count": 12,
+      "delisting_count": 1,
+      "promotion_rate": 29.3,
+      "theme_count": 10,
+      "other_count": 34
+    },
+    {
+      "date": "2026-10-29",
+      "limit_up_count": 39,
+      "max_board": 4,
+      "lianban_count": 12,
+      "delisting_count": 0,
+      "promotion_rate": 17.1,
+      "theme_count": 9,
+      "other_count": 20
+    },
+    {
+      "date": "2026-10-30",
+      "limit_up_count": 47,
+      "max_board": 5,
+      "lianban_count": 11,
+      "delisting_count": 0,
+      "promotion_rate": 28.2,
+      "theme_count": 7,
+      "other_count": 30
+    },
+    {
+      "date": "2026-11-02",
+      "limit_up_count": 125,
+      "max_board": 6,
+      "lianban_count": 20,
+      "delisting_count": 0,
+      "promotion_rate": 42.6,
+      "theme_count": 11,
+      "other_count": 62
+    },
+    {
+      "date": "2026-11-03",
+      "limit_up_count": 48,
+      "max_board": 10,
+      "lianban_count": 19,
+      "delisting_count": 0,
+      "promotion_rate": 15.2,
+      "theme_count": 8,
+      "other_count": 27
+    },
+    {
+      "date": "2026-11-04",
+      "limit_up_count": 116,
+      "max_board": 4,
+      "lianban_count": 22,
+      "delisting_count": 0,
+      "promotion_rate": 45.8,
+      "theme_count": 11,
+      "other_count": 54
+    },
+    {
+      "date": "2026-11-05",
+      "limit_up_count": 83,
+      "max_board": 7,
+      "lianban_count": 28,
+      "delisting_count": 0,
+      "promotion_rate": 24.1,
+      "theme_count": 15,
+      "other_count": 40
+    },
+    {
+      "date": "2026-11-06",
+      "limit_up_count": 32,
+      "max_board": 8,
+      "lianban_count": 15,
+      "delisting_count": 0,
+      "promotion_rate": 18.1,
+      "theme_count": 10,
+      "other_count": 12
+    },
+    {
+      "date": "2026-11-09",
+      "limit_up_count": 54,
+      "max_board": 7,
+      "lianban_count": 16,
+      "delisting_count": 0,
+      "promotion_rate": 50,
+      "theme_count": 12,
+      "other_count": 28
+    },
+    {
+      "date": "2026-11-10",
+      "limit_up_count": 93,
+      "max_board": 8,
+      "lianban_count": 33,
+      "delisting_count": 0,
+      "promotion_rate": 61.1,
+      "theme_count": 14,
+      "other_count": 37
+    },
+    {
+      "date": "2026-11-11",
+      "limit_up_count": 84,
+      "max_board": 9,
+      "lianban_count": 24,
+      "delisting_count": 0,
+      "promotion_rate": 25.8,
+      "theme_count": 13,
+      "other_count": 31
+    },
+    {
+      "date": "2026-11-12",
+      "limit_up_count": 37,
+      "max_board": 9,
+      "lianban_count": 17,
+      "delisting_count": 0,
+      "promotion_rate": 20.2,
+      "theme_count": 10,
+      "other_count": 21
+    },
+    {
+      "date": "2026-11-13",
+      "limit_up_count": 37,
+      "max_board": 10,
+      "lianban_count": 12,
+      "delisting_count": 0,
+      "promotion_rate": 32.4,
+      "theme_count": 8,
+      "other_count": 16
+    },
+    {
+      "date": "2026-11-16",
+      "limit_up_count": 32,
+      "max_board": 11,
+      "lianban_count": 14,
+      "delisting_count": 0,
+      "promotion_rate": 37.8,
+      "theme_count": 8,
+      "other_count": 20
+    },
+    {
+      "date": "2026-11-17",
+      "limit_up_count": 36,
+      "max_board": 8,
+      "lianban_count": 9,
+      "delisting_count": 0,
+      "promotion_rate": 28.1,
+      "theme_count": 8,
+      "other_count": 21
+    },
+    {
+      "date": "2026-11-18",
+      "limit_up_count": 40,
+      "max_board": 5,
+      "lianban_count": 10,
+      "delisting_count": 0,
+      "promotion_rate": 27.8,
+      "theme_count": 6,
+      "other_count": 33
+    },
+    {
+      "date": "2026-11-19",
+      "limit_up_count": 23,
+      "max_board": 3,
+      "lianban_count": 10,
+      "delisting_count": 0,
+      "promotion_rate": 25,
+      "theme_count": 6,
+      "other_count": 13
+    },
+    {
+      "date": "2026-11-20",
+      "limit_up_count": 28,
+      "max_board": 7,
+      "lianban_count": 6,
+      "delisting_count": 0,
+      "promotion_rate": 26.1,
+      "theme_count": 8,
+      "other_count": 15
+    },
+    {
+      "date": "2026-11-23",
+      "limit_up_count": 145,
+      "max_board": 9,
+      "lianban_count": 24,
+      "delisting_count": 0,
+      "promotion_rate": 85.7,
+      "theme_count": 13,
+      "other_count": 69
+    },
+    {
+      "date": "2026-11-24",
+      "limit_up_count": 55,
+      "max_board": 11,
+      "lianban_count": 33,
+      "delisting_count": 0,
+      "promotion_rate": 22.8,
+      "theme_count": 9,
+      "other_count": 28
+    },
+    {
+      "date": "2026-11-25",
+      "limit_up_count": 51,
+      "max_board": 6,
+      "lianban_count": 20,
+      "delisting_count": 0,
+      "promotion_rate": 36.4,
+      "theme_count": 10,
+      "other_count": 37
+    },
+    {
+      "date": "2026-11-26",
+      "limit_up_count": 65,
+      "max_board": 12,
+      "lianban_count": 23,
+      "delisting_count": 0,
+      "promotion_rate": 45.1,
+      "theme_count": 12,
+      "other_count": 38
+    }
+  ]
+}
