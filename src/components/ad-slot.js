@@ -16,9 +16,18 @@ export function adSlotHTML({ slot = ADSENSE.slot, label = '广告', className = 
 
 export function mountAdSlot(el) {
   if (!ADSENSE.client || !ADSENSE.slot) return;
+  let hasPending = false;
   for (const unit of el.querySelectorAll('.ad-slot-ins')) {
     if (unit.dataset.d6bAd === '1') continue;
     unit.dataset.d6bAd = '1';
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    hasPending = true;
   }
+  if (!hasPending) return;
+  setTimeout(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.warn('[AdSense] push 失败:', err?.message || err);
+    }
+  }, 0);
 }
