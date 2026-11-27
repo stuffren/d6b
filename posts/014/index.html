@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>选股prompt-从涨停股和龙虎榜数据中筛选标的_第六板</title>
+  <meta name="description" content="本文内容主要是以涨停股和龙虎榜作为基准数据，然后利用AI写的选股提示词模板进行过滤，筛选出明日可打板/可回踩低吸/可加入观察池的龙榜交易标的。">
+  <meta property="og:title" content="选股prompt-从涨停股和龙虎榜数据中筛选标的_第六板">
+  <meta property="og:description" content="本文内容主要是以涨停股和龙虎榜作为基准数据，然后利用AI写的选股提示词模板进行过滤，筛选出明日可打板/可回踩低吸/可加入观察池的龙榜交易标的。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://stuffren.github.io/d6b/posts/014/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://stuffren.github.io/d6b/posts/014/">
+  <meta name="google-adsense-account" content="ca-pub-5246023826032601">
+  <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5246023826032601"></script>
+  <link rel="stylesheet" crossorigin href="/d6b/assets/index-vfrEr6HZ.css">
+</head>
+<body>
+  <div id="app"><div class="page-root">
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="/d6b/">d6b</a>
+    <button class="nav-toggle" type="button" aria-label="菜单" aria-expanded="false">☰</button>
+    <nav class="site-nav"><a href="/d6b/zhangtingban/" class="nav-link">涨停板</a><a href="/d6b/lianbantiandi/" class="nav-link">连板天梯</a><a href="/d6b/maintheme/" class="nav-link">主线题材</a><a href="/d6b/dragonhu/" class="nav-link">龙虎榜</a><a href="/d6b/days/" class="nav-link">归档</a><a href="/d6b/categories/notes/" class="nav-link">复盘笔记</a><a href="/d6b/categories/methods/" class="nav-link is-active">投资方法</a><a href="/d6b/about/" class="nav-link">关于</a></nav>
+  </div>
+</header>
+
+<div class="page">
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="/d6b/">首页</a><span class="sep">/</span><a href="/d6b/categories/methods/">投资方法</a><span class="sep">/</span><span class="breadcrumb-current" aria-current="page">选股prompt-从涨停股和龙虎榜数据中筛选标的</span></nav>
+  <article class="post-detail">
+    <header class="post-header">
+      <h1 class="post-title">选股prompt-从涨停股和龙虎榜数据中筛选标的</h1>
+      <div class="post-meta">
+        <time>2026年11月6日</time>
+        <span class="post-tags"><span class="tag">选股提示词</span><span class="tag">打板</span><span class="tag">短线交易</span></span>
+      </div>
+    </header>
+    <div class="post-body"><h2>起因</h2>
+<p>本文内容主要是以涨停股和龙虎榜作为基准数据，然后利用AI写的选股提示词模板进行过滤，筛选出明日可打板/可回踩低吸/可加入观察池的龙榜交易标的。<br>由于同花顺平台本身就拥有涨停股数据和龙虎榜数据，那为何不直接利用这些数据呢。<br>因此我想到了一个问题：<br><strong>如果我想从每日涨停股数据和龙虎榜数据中选择标的，请用COT帮我分析应该如何写提示词</strong>？<br>然后直接利用<code>THS-问财模型</code> 写出了下方的提示词。</p>
+<br/>
+
+<h2>修订版提示词模板</h2>
+<h3>角色</h3>
+<p>你是短线交易研究员，服务对象是打板与龙虎榜交易者，持仓周期1-5个交易日，目标收益5%-10%，可接受中等波动。</p>
+<h3>任务</h3>
+<p>从【日期】的涨停股与龙虎榜数据中，筛选出【动作：明日可打板 / 可回踩低吸 / 可加入观察池】的标的。</p>
+<h3>第一步：判定市场温度（必做，决定后续全部阈值）</h3>
+<p>查询【日期】全A涨停家数、跌停家数、上证指数/深证成指/创业板指涨跌幅，按下表归档，并把归档结果写在输出第一行：</p>
+<ul>
+<li>涨停家数≥100 或 深证成指涨幅≥3% → 普涨日</li>
+<li>涨停家数50-99 → 常态日</li>
+<li>涨停家数&lt;50 → 缩量日
+同时说明：本日涨停股中，主板低价股（股价&lt;12元、非ST）占比多少，占比低于20%说明当日主线不在低价股。</li>
+</ul>
+<h3>第二步：硬性筛选（全部满足）</h3>
+<ul>
+<li>市场：沪深主板，排除ST、退市风险警示、科创板、创业板、北交所</li>
+<li>股价：低于【12】元</li>
+<li>上市时间：满60个交易日</li>
+<li>流动性：当日成交额≥2亿元，换手率≥3%</li>
+<li>排除一字板：开板0次且换手率&lt;3%的标的直接剔除（买不到）</li>
+<li>排除接力末段：近5日涨停≥3次（普涨日放宽至≥4次，但要求最近一次涨停为首次或二次）</li>
+<li>时间窗口：近5个交易日内至少1次涨停，且至少1次登上龙虎榜（不要求同日）</li>
+</ul>
+<h3>第三步：龙虎榜结构条件（至少满足两项，阈值按市场温度取值）</h3>
+<table>
+<thead>
+<tr>
+<th align="left">条件</th>
+<th align="center">普涨日</th>
+<th align="center">常态日</th>
+<th align="center">缩量日</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">买方前五净买合计占当日成交额</td>
+<td align="center">≥12%</td>
+<td align="center">≥8%</td>
+<td align="center">≥6%</td>
+</tr>
+<tr>
+<td align="left">买一净买额≥3000万，且买一卖出额&lt;买入额20%</td>
+<td align="center">同</td>
+<td align="center">同</td>
+<td align="center">同</td>
+</tr>
+<tr>
+<td align="left">买方同券商≥2席位协同，或不同席位买入金额差异&lt;30%</td>
+<td align="center">同</td>
+<td align="center">同</td>
+<td align="center">同</td>
+</tr>
+<tr>
+<td align="left">买卖力量比（买方前五净买 / 卖方前五净卖）</td>
+<td align="center">≥50%</td>
+<td align="center">≥40%</td>
+<td align="center">≥35%</td>
+</tr>
+<tr>
+<td align="left">买方含机构专用或沪深股通净买入</td>
+<td align="center">同</td>
+<td align="center">同</td>
+<td align="center">同</td>
+</tr>
+</tbody></table>
+<p>补充判定（不计入达标项，但必须写进结论）：</p>
+<ul>
+<li>卖方前五若为外资机构（摩根大通、高盛、瑞银、中金等）合计净卖超3000万，标注“外资撤退”</li>
+<li>若买一为单一游资且买二至买五中有人净卖，标注“独撑型”，次日接力资金薄</li>
+</ul>
+<h3>第四步：空间条件（筛选层，全部用涨停日数据判定）</h3>
+<p>这一层替代原来的“现价在MA5上下3%内”，因为涨停次日回踩尚未发生，用次日价卡必然筛空：</p>
+<ul>
+<li>涨停日收盘价偏离MA5 ≤10%</li>
+<li>涨停日收盘价距60日最高价 ≥-15%（离前高不超过15%，留出上行空间）</li>
+<li>涨停日成交额 / 前20日均成交额 ≥1.2（放量涨停，排除缩量假突破）</li>
+<li>涨停日封单额占流通市值 ≥0.5%</li>
+<li>涨停日收盘价在MA60上方，或距MA60不超过-5%（不接下跌趋势中的反弹板）</li>
+</ul>
+<h3>第五步：买点条件（介入层，次日及以后判定，不参与筛选）</h3>
+<p>按动作类型选一组，写进每只标的的结论里：</p>
+<ul>
+<li>回踩型：等回踩MA5±3%区间；且回踩时换手率低于涨停日换手率</li>
+<li>突破型：突破近60日高点后站稳，回踩不破突破位</li>
+<li>不追高纪律：现价偏离MA5超过10%一律标注“不介入，等回踩”，不得给出买入建议</li>
+</ul>
+<h3>输出要求</h3>
+<ol>
+<li>第一行写市场温度归档结果及主板低价股占比</li>
+<li>一张漏斗表：每道关卡剩余数量与剔除数量</li>
+<li>一张主表：代码、名称、涨停日收盘、最新价、最新涨跌幅、涨停日偏离MA5、距60日高、涨停日量能比、换手率变化、买一净买额、买方集中度、买卖力量比、席位画像、所属行业、流通市值</li>
+<li>每只标的三行结论：买点区间、止损价、失效条件（写明具体价位或事件）</li>
+<li>按【买方集中度】从高到低排序，最多给5只</li>
+<li>单列“已排除标的及原因”，逐只写明触发的是哪一条</li>
+<li>若合格标的少于2只：先给“严格版结果”，再给“放宽版结果”，注明放宽了哪一条、放宽后新增了谁、放宽的理由是什么</li>
+<li>标注数据时点与口径（复权方式、榜单类型、盘中还是收盘）</li>
+</ol>
+<h3>纪律要求</h3>
+<ul>
+<li>所有数字必须来自实际查询，取不到就写“数据缺失”，不要估算</li>
+<li>区分“观测事实”与“推断”，席位意图类判断需标注为推测并给出验证信号</li>
+<li>涨停日数据与次日数据必须分开标注，不得混用</li>
+<li>普涨日筛出的标的，必须额外说明“是否跟随大盘”，无法区分时明确写“无法区分”</li>
+</ul>
+</div>
+    <footer class="post-footer">
+      <a class="back-link" href="/d6b/categories/methods/">← 返回投资方法</a>
+    </footer>
+  </article>
+</div>
+<section class="ad-slot" aria-label="广告">
+  <span class="ad-slot-label">广告</span>
+  <div class="ad-slot-body"><ins class="adsbygoogle ad-slot-ins" style="display:block" data-ad-client="ca-pub-5246023826032601" data-ad-slot="8501189894" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+</section>
+<footer class="site-footer"><p>© 2026 Vanilla JS Development - All rights reserved</p></footer></div></div>
+  <script type="module" crossorigin src="/d6b/assets/index-DiVT5mjW.js"></script>
+</body>
+</html>

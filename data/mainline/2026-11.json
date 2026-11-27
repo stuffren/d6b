@@ -1,0 +1,1337 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-27T11:42:46",
+  "month": "2026-11",
+  "dates": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-09",
+    "2026-11-10",
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18",
+    "2026-11-19",
+    "2026-11-20",
+    "2026-11-23",
+    "2026-11-24",
+    "2026-11-25",
+    "2026-11-26"
+  ],
+  "themes": [
+    {
+      "name": "文化传媒",
+      "type": "sector",
+      "total": 113,
+      "counts": {
+        "2026-11-02": 38,
+        "2026-11-03": 5,
+        "2026-11-04": 4,
+        "2026-11-05": 6,
+        "2026-11-06": 3,
+        "2026-11-09": 2,
+        "2026-11-10": 14,
+        "2026-11-11": 8,
+        "2026-11-12": 1,
+        "2026-11-13": 8,
+        "2026-11-16": 5,
+        "2026-11-20": 4,
+        "2026-11-23": 9,
+        "2026-11-24": 2,
+        "2026-11-25": 3,
+        "2026-11-26": 1
+      }
+    },
+    {
+      "name": "汽车",
+      "type": "sector",
+      "total": 94,
+      "counts": {
+        "2026-11-02": 4,
+        "2026-11-03": 2,
+        "2026-11-04": 8,
+        "2026-11-05": 3,
+        "2026-11-06": 1,
+        "2026-11-09": 5,
+        "2026-11-10": 11,
+        "2026-11-11": 10,
+        "2026-11-12": 1,
+        "2026-11-13": 6,
+        "2026-11-16": 2,
+        "2026-11-18": 1,
+        "2026-11-19": 1,
+        "2026-11-20": 2,
+        "2026-11-23": 23,
+        "2026-11-24": 8,
+        "2026-11-25": 2,
+        "2026-11-26": 4
+      }
+    },
+    {
+      "name": "机器人",
+      "type": "sector",
+      "total": 72,
+      "counts": {
+        "2026-11-02": 4,
+        "2026-11-03": 2,
+        "2026-11-04": 9,
+        "2026-11-05": 2,
+        "2026-11-09": 5,
+        "2026-11-10": 6,
+        "2026-11-11": 8,
+        "2026-11-12": 1,
+        "2026-11-13": 2,
+        "2026-11-17": 2,
+        "2026-11-18": 3,
+        "2026-11-20": 1,
+        "2026-11-23": 15,
+        "2026-11-24": 5,
+        "2026-11-25": 2,
+        "2026-11-26": 5
+      }
+    },
+    {
+      "name": "生肖炒作",
+      "type": "sentiment",
+      "total": 51,
+      "counts": {
+        "2026-11-02": 6,
+        "2026-11-03": 9,
+        "2026-11-04": 2,
+        "2026-11-05": 4,
+        "2026-11-06": 4,
+        "2026-11-09": 2,
+        "2026-11-10": 4,
+        "2026-11-11": 1,
+        "2026-11-12": 3,
+        "2026-11-16": 1,
+        "2026-11-17": 2,
+        "2026-11-19": 1,
+        "2026-11-23": 5,
+        "2026-11-24": 4,
+        "2026-11-25": 1,
+        "2026-11-26": 2
+      }
+    },
+    {
+      "name": "电子化学品",
+      "type": "sector",
+      "total": 50,
+      "counts": {
+        "2026-11-02": 3,
+        "2026-11-03": 1,
+        "2026-11-04": 3,
+        "2026-11-05": 2,
+        "2026-11-09": 2,
+        "2026-11-10": 1,
+        "2026-11-11": 2,
+        "2026-11-12": 1,
+        "2026-11-13": 2,
+        "2026-11-16": 1,
+        "2026-11-17": 6,
+        "2026-11-18": 1,
+        "2026-11-19": 4,
+        "2026-11-20": 3,
+        "2026-11-23": 6,
+        "2026-11-24": 3,
+        "2026-11-25": 2,
+        "2026-11-26": 7
+      }
+    },
+    {
+      "name": "半导体",
+      "type": "sector",
+      "total": 36,
+      "counts": {
+        "2026-11-04": 19,
+        "2026-11-05": 4,
+        "2026-11-10": 2,
+        "2026-11-11": 2,
+        "2026-11-17": 1,
+        "2026-11-19": 3,
+        "2026-11-20": 1,
+        "2026-11-23": 2,
+        "2026-11-26": 2
+      }
+    },
+    {
+      "name": "专用设备",
+      "type": "sector",
+      "total": 29,
+      "counts": {
+        "2026-11-05": 4,
+        "2026-11-10": 4,
+        "2026-11-11": 7,
+        "2026-11-12": 3,
+        "2026-11-17": 1,
+        "2026-11-23": 7,
+        "2026-11-24": 2,
+        "2026-11-26": 1
+      }
+    },
+    {
+      "name": "光伏",
+      "type": "sector",
+      "total": 29,
+      "counts": {
+        "2026-11-02": 2,
+        "2026-11-03": 1,
+        "2026-11-04": 2,
+        "2026-11-05": 10,
+        "2026-11-06": 3,
+        "2026-11-10": 3,
+        "2026-11-11": 3,
+        "2026-11-12": 2,
+        "2026-11-13": 1,
+        "2026-11-23": 1,
+        "2026-11-26": 1
+      }
+    },
+    {
+      "name": "消费电子",
+      "type": "sector",
+      "total": 20,
+      "counts": {
+        "2026-11-05": 2,
+        "2026-11-06": 1,
+        "2026-11-10": 4,
+        "2026-11-11": 2,
+        "2026-11-16": 1,
+        "2026-11-17": 2,
+        "2026-11-18": 1,
+        "2026-11-20": 1,
+        "2026-11-23": 3,
+        "2026-11-24": 2,
+        "2026-11-25": 1
+      }
+    },
+    {
+      "name": "名称系炒作",
+      "type": "sentiment",
+      "total": 18,
+      "counts": {
+        "2026-11-06": 3,
+        "2026-11-09": 4,
+        "2026-11-10": 3,
+        "2026-11-11": 3,
+        "2026-11-12": 3,
+        "2026-11-20": 1,
+        "2026-11-23": 1
+      }
+    },
+    {
+      "name": "通信设备",
+      "type": "sector",
+      "total": 16,
+      "counts": {
+        "2026-11-05": 1,
+        "2026-11-09": 2,
+        "2026-11-10": 2,
+        "2026-11-11": 6,
+        "2026-11-16": 1,
+        "2026-11-18": 1,
+        "2026-11-23": 1,
+        "2026-11-26": 2
+      }
+    },
+    {
+      "name": "医药",
+      "type": "sector",
+      "total": 15,
+      "counts": {
+        "2026-11-02": 3,
+        "2026-11-04": 3,
+        "2026-11-05": 2,
+        "2026-11-09": 1,
+        "2026-11-10": 1,
+        "2026-11-12": 1,
+        "2026-11-23": 3,
+        "2026-11-25": 1
+      }
+    },
+    {
+      "name": "电力",
+      "type": "sector",
+      "total": 13,
+      "counts": {
+        "2026-11-02": 1,
+        "2026-11-03": 1,
+        "2026-11-05": 1,
+        "2026-11-06": 3,
+        "2026-11-09": 1,
+        "2026-11-10": 1,
+        "2026-11-11": 1,
+        "2026-11-13": 1,
+        "2026-11-16": 1,
+        "2026-11-25": 1,
+        "2026-11-26": 1
+      }
+    },
+    {
+      "name": "黄金",
+      "type": "sector",
+      "total": 13,
+      "counts": {
+        "2026-11-04": 11,
+        "2026-11-05": 1,
+        "2026-11-26": 1
+      }
+    },
+    {
+      "name": "物流",
+      "type": "sector",
+      "total": 6,
+      "counts": {
+        "2026-11-02": 1,
+        "2026-11-06": 1,
+        "2026-11-09": 1,
+        "2026-11-17": 1,
+        "2026-11-19": 1,
+        "2026-11-24": 1
+      }
+    },
+    {
+      "name": "大消费",
+      "type": "sector",
+      "total": 5,
+      "counts": {
+        "2026-11-02": 1,
+        "2026-11-04": 1,
+        "2026-11-05": 1,
+        "2026-11-06": 1,
+        "2026-11-25": 1
+      }
+    },
+    {
+      "name": "大农业",
+      "type": "sector",
+      "total": 2,
+      "counts": {
+        "2026-11-09": 1,
+        "2026-11-13": 1
+      }
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-11-02",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 38
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 6
+        }
+      ],
+      "leader": {
+        "code": "001219",
+        "name": "青岛食品",
+        "board_count": 6
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 9
+        }
+      ],
+      "leader": {
+        "code": "002696",
+        "name": "百洋股份",
+        "board_count": 10
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "topics": [
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 19
+        },
+        {
+          "name": "黄金",
+          "type": "sector",
+          "count": 11
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 9
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 8
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 2
+        }
+      ],
+      "leader": {
+        "code": "002275",
+        "name": "桂林三金",
+        "board_count": 4
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "topics": [
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 10
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 7
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "topics": [
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 4
+        },
+        {
+          "name": "名称系炒作",
+          "type": "sentiment",
+          "count": 3
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 8
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "topics": [
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "大农业",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "名称系炒作",
+          "type": "sentiment",
+          "count": 4
+        }
+      ],
+      "leader": {
+        "code": "002578",
+        "name": "闽发铝业",
+        "board_count": 7
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 14
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 11
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "600261",
+        "name": "阳光照明",
+        "board_count": 8
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "topics": [
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 10
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 8
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 8
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 7
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "600715",
+        "name": "文投控股",
+        "board_count": 9
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "topics": [
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "名称系炒作",
+          "type": "sentiment",
+          "count": 3
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 3
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 9
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 8
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "大农业",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "600715",
+        "name": "文投控股",
+        "board_count": 10
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "600715",
+        "name": "文投控股",
+        "board_count": 11
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "topics": [
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 2
+        }
+      ],
+      "leader": {
+        "code": "600261",
+        "name": "阳光照明",
+        "board_count": 8
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "topics": [
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002148",
+        "name": "北纬科技",
+        "board_count": 5
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "topics": [
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002771",
+        "name": "真视通",
+        "board_count": 3
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "名称系炒作",
+          "type": "sentiment",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "600327",
+        "name": "大东方",
+        "board_count": 7
+      }
+    },
+    {
+      "date": "2026-11-23",
+      "topics": [
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 23
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 15
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 9
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 7
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 6
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 9
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "topics": [
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 8
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 4
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 11
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "topics": [
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "消费电子",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002548",
+        "name": "金新农",
+        "board_count": 6
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "topics": [
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 7
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "通信设备",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "专用设备",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电力",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "黄金",
+          "type": "sector",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002086",
+        "name": "东方海洋",
+        "board_count": 12
+      }
+    }
+  ],
+  "other": {
+    "name": "其他概念",
+    "total": 602,
+    "counts": {
+      "2026-11-02": 62,
+      "2026-11-03": 27,
+      "2026-11-04": 54,
+      "2026-11-05": 40,
+      "2026-11-06": 12,
+      "2026-11-09": 28,
+      "2026-11-10": 37,
+      "2026-11-11": 31,
+      "2026-11-12": 21,
+      "2026-11-13": 16,
+      "2026-11-16": 20,
+      "2026-11-17": 21,
+      "2026-11-18": 33,
+      "2026-11-19": 13,
+      "2026-11-20": 15,
+      "2026-11-23": 69,
+      "2026-11-24": 28,
+      "2026-11-25": 37,
+      "2026-11-26": 38
+    }
+  }
+}

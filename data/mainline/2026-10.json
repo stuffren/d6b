@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-27T11:42:46",
+  "month": "2026-10",
+  "dates": [
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "themes": [
+    {
+      "name": "机器人",
+      "type": "sector",
+      "total": 36,
+      "counts": {
+        "2026-10-26": 11,
+        "2026-10-27": 2,
+        "2026-10-28": 13,
+        "2026-10-29": 7,
+        "2026-10-30": 3
+      }
+    },
+    {
+      "name": "汽车",
+      "type": "sector",
+      "total": 27,
+      "counts": {
+        "2026-10-26": 7,
+        "2026-10-27": 9,
+        "2026-10-28": 9,
+        "2026-10-29": 2
+      }
+    },
+    {
+      "name": "生肖炒作",
+      "type": "sentiment",
+      "total": 12,
+      "counts": {
+        "2026-10-27": 3,
+        "2026-10-28": 1,
+        "2026-10-29": 4,
+        "2026-10-30": 4
+      }
+    },
+    {
+      "name": "文化传媒",
+      "type": "sector",
+      "total": 10,
+      "counts": {
+        "2026-10-26": 3,
+        "2026-10-27": 1,
+        "2026-10-28": 3,
+        "2026-10-29": 2,
+        "2026-10-30": 1
+      }
+    },
+    {
+      "name": "医药",
+      "type": "sector",
+      "total": 7,
+      "counts": {
+        "2026-10-28": 1,
+        "2026-10-29": 1,
+        "2026-10-30": 5
+      }
+    },
+    {
+      "name": "大消费",
+      "type": "sector",
+      "total": 7,
+      "counts": {
+        "2026-10-27": 2,
+        "2026-10-28": 1,
+        "2026-10-29": 1,
+        "2026-10-30": 3
+      }
+    },
+    {
+      "name": "电子化学品",
+      "type": "sector",
+      "total": 7,
+      "counts": {
+        "2026-10-26": 2,
+        "2026-10-28": 4,
+        "2026-10-29": 1
+      }
+    },
+    {
+      "name": "半导体",
+      "type": "sector",
+      "total": 4,
+      "counts": {
+        "2026-10-28": 3,
+        "2026-10-30": 1
+      }
+    },
+    {
+      "name": "光伏",
+      "type": "sector",
+      "total": 2,
+      "counts": {
+        "2026-10-27": 1,
+        "2026-10-29": 1
+      }
+    },
+    {
+      "name": "物流",
+      "type": "sector",
+      "total": 2,
+      "counts": {
+        "2026-10-27": 1,
+        "2026-10-28": 1
+      }
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-10-26",
+      "topics": [
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 11
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 7
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 2
+        }
+      ],
+      "leader": {
+        "code": "002696",
+        "name": "百洋股份",
+        "board_count": 8
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "topics": [
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 9
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 3
+        }
+      ],
+      "leader": {
+        "code": "002724",
+        "name": "海洋王",
+        "board_count": 7
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "topics": [
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 13
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 9
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 4
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "物流",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 1
+        }
+      ],
+      "leader": {
+        "code": "002696",
+        "name": "百洋股份",
+        "board_count": 9
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "topics": [
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 7
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "汽车",
+          "type": "sector",
+          "count": 2
+        },
+        {
+          "name": "光伏",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "电子化学品",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 4
+        }
+      ],
+      "leader": {
+        "code": "001219",
+        "name": "青岛食品",
+        "board_count": 4
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "topics": [
+        {
+          "name": "医药",
+          "type": "sector",
+          "count": 5
+        },
+        {
+          "name": "大消费",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "机器人",
+          "type": "sector",
+          "count": 3
+        },
+        {
+          "name": "半导体",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "文化传媒",
+          "type": "sector",
+          "count": 1
+        },
+        {
+          "name": "生肖炒作",
+          "type": "sentiment",
+          "count": 4
+        }
+      ],
+      "leader": {
+        "code": "001219",
+        "name": "青岛食品",
+        "board_count": 5
+      }
+    }
+  ],
+  "other": {
+    "name": "其他概念",
+    "total": 138,
+    "counts": {
+      "2026-10-26": 32,
+      "2026-10-27": 22,
+      "2026-10-28": 34,
+      "2026-10-29": 20,
+      "2026-10-30": 30
+    }
+  }
+}
